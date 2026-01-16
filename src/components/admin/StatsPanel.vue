@@ -9,37 +9,37 @@
     <div class="stat-card">
       <div class="stat-icon">📝</div>
       <div class="stat-value">{{ stats.byType.contact || 0 }}</div>
-      <div class="stat-label">Contact</div>
+      <div class="stat-label">{{ (stats.byType.contact || 0) > 1 ? 'Contacts' : 'Contact' }}</div>
     </div>
 
     <div class="stat-card">
       <div class="stat-icon">👤</div>
       <div class="stat-value">{{ stats.byType.registration || 0 }}</div>
-      <div class="stat-label">Inscriptions</div>
+      <div class="stat-label">{{ (stats.byType.registration || 0) > 1 ? 'Inscriptions' : 'Inscription' }}</div>
     </div>
 
     <div class="stat-card">
       <div class="stat-icon">📬</div>
       <div class="stat-value">{{ stats.byType.newsletter || 0 }}</div>
-      <div class="stat-label">Newsletter</div>
+      <div class="stat-label">{{ (stats.byType.newsletter || 0) > 1 ? 'Newsletter' : 'Newsletter' }}</div>
     </div>
 
     <div class="stat-card">
       <div class="stat-icon">❓</div>
       <div class="stat-value">{{ stats.byType.question || 0 }}</div>
-      <div class="stat-label">Questions</div>
+      <div class="stat-label">{{ (stats.byType.question || 0) > 1 ? 'Questions' : 'Question' }}</div>
     </div>
 
     <div class="stat-card">
       <div class="stat-icon">🚀</div>
       <div class="stat-value">{{ stats.byType.project || 0 }}</div>
-      <div class="stat-label">Projets</div>
+      <div class="stat-label">{{ (stats.byType.project || 0) > 1 ? 'Projets' : 'Projet' }}</div>
     </div>
 
     <div class="stat-card">
       <div class="stat-icon">💳</div>
       <div class="stat-value">{{ stats.byType.payment || 0 }}</div>
-      <div class="stat-label">Paiements</div>
+      <div class="stat-label">{{ (stats.byType.payment || 0) > 1 ? 'Paiements' : 'Paiement' }}</div>
     </div>
 
     <div class="stat-card stat-card-highlight">

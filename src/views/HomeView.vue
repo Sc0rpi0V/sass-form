@@ -1,7 +1,7 @@
 <template>
   <div class="home-view">
     <div class="hero-section">
-      <h1 class="hero-title">Vue.js Forms Starter Pack</h1>
+      <h1 class="hero-title">Forms Starter Pack</h1>
       <p class="hero-subtitle">
         Collection de formulaires prêts à l'emploi avec validation complète et sauvegarde automatique
       </p>
@@ -49,6 +49,15 @@
         <h3 class="card-title">Demande de projet</h3>
         <p class="card-description">
           Formulaire détaillé pour une demande de projet avec budget et timeline
+        </p>
+        <span class="card-link">Accéder au formulaire →</span>
+      </RouterLink>
+
+      <RouterLink to="/paiement" class="form-card">
+        <div class="card-icon">🚀</div>
+        <h3 class="card-title">Paiement</h3>
+        <p class="card-description">
+          Formulaire détaillé pour une demande de paiement
         </p>
         <span class="card-link">Accéder au formulaire →</span>
       </RouterLink>

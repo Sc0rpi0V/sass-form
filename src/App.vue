@@ -11,7 +11,7 @@ const isHomePage = computed(() => route.path === '/');
     <header class="app-header">
       <div class="container">
         <RouterLink to="/" class="logo-link">
-          <h1 class="app-title">Vue.js Forms</h1>
+          <h1 class="app-title">Forms Starter Pack</h1>
         </RouterLink>
         <p class="app-subtitle">Starter Pack</p>
       </div>
@@ -32,8 +32,7 @@ const isHomePage = computed(() => route.path === '/');
     <footer class="app-footer">
       <div class="container">
         <p class="footer-text">
-          © 2025 Vue.js Forms Starter Pack -
-          <a href="https://vuejs.org" target="_blank" rel="noopener">Vue.js</a>
+          © 2025 Forms Starter Pack -
         </p>
       </div>
     </footer>

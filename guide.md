@@ -1,4 +1,4 @@
-# Guide d'utilisation - Vue.js Forms Starter Pack
+# Guide d'utilisation - Forms Starter Pack
 
 ## 📦 Installation
 

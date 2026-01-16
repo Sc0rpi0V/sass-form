@@ -41,6 +41,13 @@ const router = createRouter({
       component: () => import('@/views/ProjectView.vue'),
       meta: { title: 'Demande de projet' }
     },
+    {
+      path: '/paiement',
+      name: 'payment',
+      component: () => import('@/views/PaymentView.vue'),
+      meta: { title: 'Demande de paiement' }
+    },
+
     // Routes Admin
     {
       path: '/admin',

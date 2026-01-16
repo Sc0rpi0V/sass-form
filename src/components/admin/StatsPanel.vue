@@ -36,6 +36,12 @@
       <div class="stat-label">Projets</div>
     </div>
 
+    <div class="stat-card">
+      <div class="stat-icon">💳</div>
+      <div class="stat-value">{{ stats.byType.payment || 0 }}</div>
+      <div class="stat-label">Paiements</div>
+    </div>
+
     <div class="stat-card stat-card-highlight">
       <div class="stat-icon">📅</div>
       <div class="stat-value">{{ stats.thisMonth }}</div>

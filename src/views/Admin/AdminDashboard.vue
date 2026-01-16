@@ -60,68 +60,47 @@ import SubmissionsTable from '@/components/admin/SubmissionsTable.vue';
 
 const router = useRouter();
 const { user, logout } = useAuth();
-const { submissions, getByType, search, getStats } = useSubmissions();
+const { submissions, getByType, getStats } = useSubmissions();
 
 const activeTab = ref('all');
 const searchQuery = ref('');
 
-// Configuration des onglets
 const tabs = [
   { key: 'all', label: 'Toutes' },
   { key: 'contact', label: 'Contact' },
   { key: 'registration', label: 'Inscription' },
   { key: 'newsletter', label: 'Newsletter' },
   { key: 'question', label: 'Questions' },
-  { key: 'project', label: 'Projets' }
+  { key: 'project', label: 'Projets' },
+  { key: 'payment', label: 'Paiements' }
 ];
 
-// Configuration des colonnes par type
 const columnsConfig = {
   all: [
     { key: 'formType', label: 'Type' },
-    { key: 'name', label: 'Nom' },
-    { key: 'email', label: 'Email' },
-    { key: 'submittedAt', label: 'Date' }
-  ],
-  contact: [
-    { key: 'name', label: 'Nom' },
-    { key: 'email', label: 'Email' },
-    { key: 'phone', label: 'Téléphone' },
-    { key: 'subject', label: 'Sujet' },
-    { key: 'submittedAt', label: 'Date' }
-  ],
-  registration: [
     { key: 'firstName', label: 'Prénom' },
     { key: 'lastName', label: 'Nom' },
     { key: 'email', label: 'Email' },
-    { key: 'phone', label: 'Téléphone' },
     { key: 'submittedAt', label: 'Date' }
   ],
-  newsletter: [
+  payment: [
     { key: 'firstName', label: 'Prénom' },
     { key: 'lastName', label: 'Nom' },
     { key: 'email', label: 'Email' },
-    { key: 'consent', label: 'Consentement' },
+    { key: 'paymentMethod', label: 'Méthode de paiement' },
+    { key: 'amount', label: 'Montant' },
     { key: 'submittedAt', label: 'Date' }
   ],
-  question: [
-    { key: 'name', label: 'Nom' },
-    { key: 'email', label: 'Email' },
-    { key: 'category', label: 'Catégorie' },
-    { key: 'question', label: 'Question' },
-    { key: 'submittedAt', label: 'Date' }
-  ],
-  project: [
-    { key: 'company', label: 'Entreprise' },
-    { key: 'name', label: 'Nom' },
-    { key: 'email', label: 'Email' },
-    { key: 'projectType', label: 'Type' },
-    { key: 'budget', label: 'Budget' },
-    { key: 'submittedAt', label: 'Date' }
-  ]
+  // project: [
+  //   { key: 'firstName', label: 'Prénom' },
+  //   { key: 'lastName', label: 'Nom' },
+  //   { key: 'email', label: 'Email' },
+  //   { key: 'projectType', label: 'Type de projet' },
+  //   { key: 'budget', label: 'Budget' },
+  //   { key: 'submittedAt', label: 'Date' }
+  // ]
 };
 
-// Computed properties
 const stats = computed(() => getStats());
 
 const currentColumns = computed(() => {
@@ -129,28 +108,24 @@ const currentColumns = computed(() => {
 });
 
 const filteredSubmissions = computed(() => {
-  let data = activeTab.value === 'all'
-    ? submissions.value
-    : getByType(activeTab.value);
+  let data =
+    activeTab.value === 'all'
+      ? submissions.value
+      : getByType(activeTab.value);
 
   if (searchQuery.value) {
     const query = searchQuery.value.toLowerCase();
 
     data = data.filter(sub => {
-      const fieldsToSearch = [
-        sub.name,
-        sub.email,
-        sub.subject,
+      const fields = [
         sub.firstName,
         sub.lastName,
-        sub.company,
-        sub.projectType,
-        sub.category,
-        sub.question
-      ].filter(Boolean); 
+        sub.email,
+        sub.paymentMethod,
+        sub.amount
+      ].filter(Boolean);
 
-      // Vérifie si champ contient query
-      return fieldsToSearch.some(field =>
+      return fields.some(field =>
         field.toString().toLowerCase().includes(query)
       );
     });
@@ -164,7 +139,6 @@ const getCount = (type) => {
   return getByType(type).length;
 };
 
-// Méthodes
 const handleSearch = (query) => {
   searchQuery.value = query;
 };

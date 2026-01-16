@@ -175,7 +175,8 @@ const formatValue = (value, key) => {
       registration: 'Inscription',
       newsletter: 'Newsletter',
       question: 'Question',
-      project: 'Projet'
+      project: 'Projet',
+      payment: 'Paiement'
     };
     return types[value] || value;
   }

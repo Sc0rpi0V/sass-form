@@ -54,7 +54,7 @@
       </RouterLink>
 
       <RouterLink to="/paiement" class="form-card">
-        <div class="card-icon">🚀</div>
+        <div class="card-icon">💳</div>
         <h3 class="card-title">Paiement</h3>
         <p class="card-description">
           Formulaire détaillé pour une demande de paiement

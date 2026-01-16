@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import { useAuth } from '@/composables/useAuth';
+import { useUserAuth } from '@/composables/useUserAuth';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -49,7 +50,7 @@ const router = createRouter({
     {
       path: '/admin/login',
       name: 'admin-login',
-      component: () => import('@/views/AdminLogin.vue'),
+      component: () => import('@/views/Admin/AdminLogin.vue'),
       meta: {
         title: 'Connexion Admin',
         guestOnly: true
@@ -58,36 +59,39 @@ const router = createRouter({
     {
       path: '/admin/dashboard',
       name: 'admin-dashboard',
-      component: () => import('@/views/AdminDashboard.vue'),
+      component: () => import('@/views/Admin/AdminDashboard.vue'),
       meta: {
         title: 'Dashboard Admin',
         requiresAuth: true
       }
+    },
+    {
+      path: '/user/login',
+      name: 'user-login',
+      component: () => import('@/views/Users/UserLogin.vue'),
+      meta: { title: 'Connexion', guestOnly: true }
+    },
+    {
+      path: '/user/dashboard',
+      name: 'user-dashboard',
+      component: () => import('@/views/Users/UserDashboard.vue'),
+      meta: { title: 'Mon Compte', requiresUserAuth: true }
     }
   ]
 });
 
 router.beforeEach((to, _from, next) => {
-  // Mettre à jour le titre de la page
   document.title = to.meta.title ? `${to.meta.title} | Forms App` : 'Forms App';
 
-  // Vérifier l'authentification
-  const { checkAuth } = useAuth();
-  const isAuthenticated = checkAuth();
+  // Vérifier auth utilisateur
+  const { checkAuth, isLoggedIn } = useUserAuth();
+  const isUserAuthenticated = isLoggedIn() || checkAuth();
 
-  // Protection des routes admin (requiresAuth)
-  if (to.meta.requiresAuth && !isAuthenticated) {
-    next({
-      name: 'admin-login',
-      query: { redirect: to.fullPath }
-    });
-  }
-  // Rediriger admin connecté depuis /login vers dashboard
-  else if (to.meta.guestOnly && isAuthenticated) {
-    next({ name: 'admin-dashboard' });
-  }
-  // Route autorisée
-  else {
+  if (to.meta.requiresUserAuth && !isUserAuthenticated) {
+    next({ name: 'user-login', query: { redirect: to.fullPath } });
+  } else if (to.meta.guestOnly && isUserAuthenticated) {
+    next({ name: 'user-dashboard' });
+  } else {
     next();
   }
 });

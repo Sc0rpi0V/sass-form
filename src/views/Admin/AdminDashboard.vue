@@ -188,6 +188,7 @@ const handleLogout = () => {
   border-bottom: 1px solid $color-border;
   padding: $spacing-xl 0;
   box-shadow: $shadow-sm;
+  border-radius: 8px;
 }
 
 .header-content {

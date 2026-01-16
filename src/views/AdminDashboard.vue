@@ -133,13 +133,27 @@ const filteredSubmissions = computed(() => {
     ? submissions.value
     : getByType(activeTab.value);
 
-  // Appliquer la recherche
   if (searchQuery.value) {
-    data = search(searchQuery.value);
-    // Filtrer par type si un onglet spécifique est actif
-    if (activeTab.value !== 'all') {
-      data = data.filter(s => s.formType === activeTab.value);
-    }
+    const query = searchQuery.value.toLowerCase();
+
+    data = data.filter(sub => {
+      const fieldsToSearch = [
+        sub.name,
+        sub.email,
+        sub.subject,
+        sub.firstName,
+        sub.lastName,
+        sub.company,
+        sub.projectType,
+        sub.category,
+        sub.question
+      ].filter(Boolean); 
+
+      // Vérifie si champ contient query
+      return fieldsToSearch.some(field =>
+        field.toString().toLowerCase().includes(query)
+      );
+    });
   }
 
   return data;

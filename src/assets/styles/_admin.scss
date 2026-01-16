@@ -1,0 +1,25 @@
+@use './variables' as *;
+
+// Variables Admin supplémentaires
+$color-admin-primary: #1e40af;
+$color-admin-bg: #f9fafb;
+$color-admin-card: #ffffff;
+$color-admin-border: #e5e7eb;
+$color-admin-hover: #f3f4f6;
+
+// Styles globaux pour l'admin
+.admin-dashboard {
+  .container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 $container-padding;
+  }
+}
+
+// Reset pour les éléments admin si nécessaire
+.dashboard-main,
+.admin-login-page {
+  * {
+    box-sizing: border-box;
+  }
+}

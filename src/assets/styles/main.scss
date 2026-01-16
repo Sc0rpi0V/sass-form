@@ -1,0 +1,38 @@
+@use './base';
+@use './variables' as *;
+@use './mixins' as *;
+@use './admin';
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Container class for content
+.container {
+  @include container;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.text-error {
+  color: $color-error;
+}
+
+.text-success {
+  color: $color-success;
+}
+
+.mt-sm { margin-top: $spacing-sm; }
+.mt-md { margin-top: $spacing-md; }
+.mt-lg { margin-top: $spacing-lg; }
+.mt-xl { margin-top: $spacing-xl; }
+
+.mb-sm { margin-bottom: $spacing-sm; }
+.mb-md { margin-bottom: $spacing-md; }
+.mb-lg { margin-bottom: $spacing-lg; }
+.mb-xl { margin-bottom: $spacing-xl; }

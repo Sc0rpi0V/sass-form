@@ -1,0 +1,5 @@
+// Forwarding central pour tous les styles
+// Ce fichier permet aux composants Vue d'importer tout avec un seul @use
+
+@forward './variables';
+@forward './mixins';

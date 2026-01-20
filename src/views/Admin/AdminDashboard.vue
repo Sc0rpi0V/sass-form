@@ -37,11 +37,28 @@
           </button>
         </div>
 
-        <!-- Submissions Table -->
         <SubmissionsTable
           :submissions="filteredSubmissions"
           :columns="currentColumns"
           :type="activeTab"
+          @row-click="openModal"
+          @archive="openArchiveConfirm"
+        />
+
+        <!-- Submission details modal -->
+        <SubmissionModal
+          v-if="isModalOpen && selectedSubmission"
+          :submission="selectedSubmission"
+          @close="closeModal"
+          @answer="handleAnswer"
+          @archive="confirmArchive"
+        />
+
+        <!-- Archive confirmation modal -->
+        <ArchiveConfirmModal
+          v-if="isArchiveModalOpen"
+          @confirm="confirmArchive"
+          @cancel="cancelArchive"
         />
       </div>
     </main>
@@ -53,18 +70,38 @@ import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuth } from '@/composables/useAuth';
 import { useSubmissions } from '@/composables/useSubmissions';
+
 import BaseButton from '@/components/ui/BaseButton.vue';
 import StatsPanel from '@/components/admin/StatsPanel.vue';
 import SearchBar from '@/components/admin/SearchBar.vue';
 import SubmissionsTable from '@/components/admin/SubmissionsTable.vue';
+import SubmissionModal from '@/components/ui/SubmissionModal.vue';
+import ArchiveConfirmModal from '@/components/ui/ArchiveConfirmModal.vue';
 
+/* -----------------------
+   AUTH / ROUTER
+----------------------- */
 const router = useRouter();
 const { user, logout } = useAuth();
+
+/* -----------------------
+   DATA
+----------------------- */
 const { submissions, getByType, getStats } = useSubmissions();
 
 const activeTab = ref('all');
 const searchQuery = ref('');
 
+/* -----------------------
+   MODALS STATE
+----------------------- */
+const selectedSubmission = ref(null);
+const isModalOpen = ref(false);
+const isArchiveModalOpen = ref(false);
+
+/* -----------------------
+   TABS CONFIG
+----------------------- */
 const tabs = [
   { key: 'all', label: 'Toutes' },
   { key: 'contact', label: 'Contact' },
@@ -72,9 +109,13 @@ const tabs = [
   { key: 'newsletter', label: 'Newsletter' },
   { key: 'question', label: 'Questions' },
   { key: 'project', label: 'Projets' },
-  { key: 'payment', label: 'Paiements' }
+  { key: 'payment', label: 'Paiements' },
+  { key: 'archived', label: 'Archivées' }
 ];
 
+/* -----------------------
+   TABLE COLUMNS
+----------------------- */
 const columnsConfig = {
   all: [
     { key: 'formType', label: 'Type' },
@@ -90,55 +131,119 @@ const columnsConfig = {
     { key: 'paymentMethod', label: 'Méthode de paiement' },
     { key: 'amount', label: 'Montant' },
     { key: 'submittedAt', label: 'Date' }
-  ],
-  // project: [
-  //   { key: 'firstName', label: 'Prénom' },
-  //   { key: 'lastName', label: 'Nom' },
-  //   { key: 'email', label: 'Email' },
-  //   { key: 'projectType', label: 'Type de projet' },
-  //   { key: 'budget', label: 'Budget' },
-  //   { key: 'submittedAt', label: 'Date' }
-  // ]
+  ]
 };
 
+/* -----------------------
+   COMPUTED
+----------------------- */
 const stats = computed(() => getStats());
 
 const currentColumns = computed(() => {
   return columnsConfig[activeTab.value] || columnsConfig.all;
 });
 
+/* -----------------------
+   FILTERED SUBMISSIONS
+----------------------- */
 const filteredSubmissions = computed(() => {
-  let data =
-    activeTab.value === 'all'
-      ? submissions.value
-      : getByType(activeTab.value);
+  let data = submissions.value;
 
+  // Archivées
+  if (activeTab.value === 'archived') {
+    data = data.filter(s => s.status === 'archived');
+  } else {
+    // Actives
+    data = data.filter(s => s.status !== 'archived');
+
+    if (activeTab.value !== 'all') {
+      data = data.filter(s => s.formType === activeTab.value);
+    }
+  }
+
+  // Search
   if (searchQuery.value) {
     const query = searchQuery.value.toLowerCase();
-
-    data = data.filter(sub => {
-      const fields = [
-        sub.firstName,
-        sub.lastName,
-        sub.email,
-        sub.paymentMethod,
-        sub.amount
-      ].filter(Boolean);
-
-      return fields.some(field =>
-        field.toString().toLowerCase().includes(query)
-      );
-    });
+    data = data.filter(sub =>
+      Object.values(sub)
+        .filter(Boolean)
+        .some(val =>
+          val.toString().toLowerCase().includes(query)
+        )
+    );
   }
 
   return data;
 });
 
+/* -----------------------
+   COUNTS
+----------------------- */
 const getCount = (type) => {
-  if (type === 'all') return submissions.value.length;
-  return getByType(type).length;
+  if (type === 'archived') {
+    return submissions.value.filter(s => s.status === 'archived').length;
+  }
+
+  if (type === 'all') {
+    return submissions.value.filter(s => s.status !== 'archived').length;
+  }
+
+  return submissions.value.filter(
+    s => s.formType === type && s.status !== 'archived'
+  ).length;
 };
 
+/* -----------------------
+   MODAL HANDLERS
+----------------------- */
+const openModal = (submission) => {
+  // statut par défaut si absent
+  if (!submission.status) {
+    submission.status = 'new';
+  }
+
+  selectedSubmission.value = submission;
+  isModalOpen.value = true;
+};
+
+const closeModal = () => {
+  isModalOpen.value = false;
+  selectedSubmission.value = null;
+};
+
+/* -----------------------
+   ACTIONS
+----------------------- */
+const handleAnswer = (submission) => {
+  if (submission.email) {
+    window.location.href = `mailto:${submission.email}`;
+  }
+
+  submission.status = 'answered';
+};
+
+const openArchiveConfirm = (submission) => {
+  selectedSubmission.value = submission;
+  isArchiveModalOpen.value = true;
+};
+
+const confirmArchive = () => {
+  if (!selectedSubmission.value) return;
+
+  selectedSubmission.value.status = 'archived';
+
+  isArchiveModalOpen.value = false;
+  isModalOpen.value = false;
+  selectedSubmission.value = null;
+};
+
+const cancelArchive = () => {
+  isArchiveModalOpen.value = false;
+};
+
+/* -----------------------
+   SEARCH / LOGOUT
+----------------------- */
 const handleSearch = (query) => {
   searchQuery.value = query;
 };
@@ -215,15 +320,6 @@ const handleLogout = () => {
   margin-bottom: $spacing-xl;
   overflow-x: auto;
   padding-bottom: $spacing-xs;
-
-  &::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: $color-border;
-    border-radius: 2px;
-  }
 }
 
 .tab-btn {
@@ -239,39 +335,18 @@ const handleLogout = () => {
   color: $color-text;
   cursor: pointer;
   transition: all $transition-speed $transition-timing;
-  white-space: nowrap;
-
-  &:hover {
-    border-color: $color-primary;
-    transform: translateY(-1px);
-  }
 
   &.active {
     background: $color-primary;
     color: white;
     border-color: $color-primary;
   }
-
-  &:focus {
-    outline: 2px solid $color-primary;
-    outline-offset: 2px;
-  }
 }
 
 .tab-count {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   min-width: 20px;
-  height: 20px;
   padding: 0 $spacing-xs;
-  background: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  font-size: $font-size-xs;
   font-weight: 600;
-
-  .tab-btn.active & {
-    background: rgba(255, 255, 255, 0.3);
-  }
 }
 </style>

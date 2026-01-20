@@ -36,7 +36,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="item in paginatedData" :key="item.id" class="data-row">
+            <tr
+              v-for="item in paginatedData"
+              :key="item.id"
+              class="data-row clickable"
+              @click="handleRowClick(item)"
+            >
               <td v-for="col in columns" :key="col.key">
                 {{ formatValue(item[col.key], col.key) }}
               </td>
@@ -94,6 +99,12 @@ const itemsPerPage = ref(25);
 const currentPage = ref(1);
 const sortKey = ref('submittedAt');
 const sortOrder = ref('desc');
+
+const emit = defineEmits(['row-click']);
+
+const handleRowClick = (item) => {
+  emit('row-click', item);
+};
 
 // Reset page quand les données changent
 watch(() => props.submissions, () => {
@@ -257,6 +268,14 @@ const formatValue = (value, key) => {
 .table-container {
   overflow-x: auto;
   margin-bottom: $spacing-lg;
+}
+
+.data-row.clickable {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #eef2ff;
+  }
 }
 
 .data-table {

@@ -1,4 +1,4 @@
-import { computed } from 'vue';
+import { ref, computed } from 'vue';
 import { generateUUID } from '@/utils/uuid';
 
 const STORAGE_KEY = 'form-submissions';
@@ -56,9 +56,14 @@ export function useSubmissions() {
   };
 
   /**
-   * Toutes les soumissions sous forme de tableau plat
+   * State réactif des soumissions
    */
-  const submissions = computed(() => {
+  const submissionsState = ref([]);
+
+  /**
+   * Recharger les soumissions depuis le localStorage
+   */
+  const refreshSubmissions = () => {
     const data = loadSubmissions();
     const allSubmissions = [];
 
@@ -71,11 +76,16 @@ export function useSubmissions() {
       });
     });
 
-    // Trier par date (plus récent en premier)
-    return allSubmissions.sort((a, b) => {
+    submissionsState.value = allSubmissions.sort((a, b) => {
       return new Date(b.submittedAt) - new Date(a.submittedAt);
     });
-  });
+  };
+  refreshSubmissions();
+
+  /**
+   * Toutes les soumissions sous forme de tableau plat
+   */
+  const submissions = computed(() => submissionsState.value);
 
   /**
    * Récupérer les soumissions par type
@@ -110,6 +120,7 @@ export function useSubmissions() {
     const submission = {
       id: generateUUID(),
       submittedAt: new Date().toISOString(),
+      status: 'new',
       ...formData
     };
 
@@ -119,6 +130,7 @@ export function useSubmissions() {
 
     data[type].push(submission);
     saveSubmissions(data);
+    refreshSubmissions();
 
     console.log(`Submission added to ${type}:`, submission);
   };
@@ -144,6 +156,25 @@ export function useSubmissions() {
         return false;
       });
     });
+  };
+
+  /**
+   * Mettre à jour le statut d'une soumission
+   * @param {string} id
+   * @param {string} formType
+   * @param {string} status
+   */
+  const updateSubmissionStatus = (id, formType, status) => {
+    const data = loadSubmissions();
+
+    if (!data[formType]) return;
+
+    const index = data[formType].findIndex(s => s.id === id);
+    if (index === -1) return;
+
+    data[formType][index].status = status;
+    saveSubmissions(data);
+    refreshSubmissions();
   };
 
   /**
@@ -261,6 +292,8 @@ export function useSubmissions() {
     submissions,
     getByType,
     addSubmission,
+    updateSubmissionStatus,
+    refreshSubmissions,
     search,
     getStats,
     exportToCSV,

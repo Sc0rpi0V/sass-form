@@ -87,7 +87,7 @@ const { user, logout } = useAuth();
 /* -----------------------
    DATA
 ----------------------- */
-const { submissions, getByType, getStats } = useSubmissions();
+const { submissions, getByType, getStats, updateSubmissionStatus } = useSubmissions();
 
 const activeTab = ref('all');
 const searchQuery = ref('');
@@ -230,7 +230,13 @@ const openArchiveConfirm = (submission) => {
 const confirmArchive = () => {
   if (!selectedSubmission.value) return;
 
-  selectedSubmission.value.status = 'archived';
+  updateSubmissionStatus(
+    selectedSubmission.value.id,
+    selectedSubmission.value.formType,
+    'archived'
+  );
+
+  activeTab.value = 'archived';
 
   isArchiveModalOpen.value = false;
   isModalOpen.value = false;

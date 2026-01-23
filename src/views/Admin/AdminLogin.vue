@@ -56,9 +56,9 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
-import { useAuth } from '@/composables/useAuth';
-import BaseInput from '@/components/ui/BaseInput.vue';
-import BaseButton from '@/components/ui/BaseButton.vue';
+import { useAuth } from '@/composables/auth/useAuth';
+import BaseInput from '@/components/ui/base/BaseInput.vue';
+import BaseButton from '@/components/ui/base/BaseButton.vue';
 
 const router = useRouter();
 const route = useRoute();

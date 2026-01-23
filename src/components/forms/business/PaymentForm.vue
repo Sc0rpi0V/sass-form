@@ -145,11 +145,11 @@
 
 <script setup>
 import { useForm } from '@/composables/useForm';
-import { useSubmissions } from '@/composables/useSubmissions';
+import { useSubmissions } from '@/composables/submissions/useSubmissions';
 import { validators } from '@/utils/validators';
-import BaseInput from '@/components/ui/BaseInput.vue';
+import BaseInput from '@/components/ui/base/BaseInput.vue';
 import BaseSelect from '@/components/ui/BaseSelect.vue';
-import BaseButton from '@/components/ui/BaseButton.vue';
+import BaseButton from '@/components/ui/base/BaseButton.vue';
 
 const initialValues = {
   firstName: '',

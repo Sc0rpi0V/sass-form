@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import NewsletterForm from '@/components/forms/NewsletterForm.vue';
+import NewsletterForm from '@/components/forms/public/NewsletterForm.vue';
 </script>
 
 <style scoped>

@@ -37,10 +37,10 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
-import { useUserAuth } from '@/composables/useUserAuth';
-import { useSubmissions } from '@/composables/useSubmissions';
-import BaseButton from '@/components/ui/BaseButton.vue';
-import SubmissionsTable from '@/components/admin/SubmissionsTable.vue';
+import { useUserAuth } from '@/composables/auth/useUserAuth';
+import { useSubmissions } from '@/composables/submissions/useSubmissions';
+import BaseButton from '@/components/ui/base/BaseButton.vue';
+import SubmissionsTable from '@/components/admin/submissions/SubmissionsTable.vue';
 
 const router = useRouter();
 const { user, logout } = useUserAuth();

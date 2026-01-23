@@ -1,5 +1,5 @@
 import { ref, onMounted } from 'vue';
-import { useSubmissions } from '@/composables/useSubmissions';
+import { useSubmissions } from '@/composables/submissions/useSubmissions';
 
 const STORAGE_KEY = 'user-auth';
 const isAuthenticated = ref(false);

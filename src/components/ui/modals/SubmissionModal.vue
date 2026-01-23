@@ -73,7 +73,7 @@
 </template>
 
 <script setup>
-import BaseButton from '@/components/ui/BaseButton.vue';
+import BaseButton from '@/components/ui/base/BaseButton.vue';
 import { ref } from 'vue';
 
 const showArchiveConfirm = ref(false);

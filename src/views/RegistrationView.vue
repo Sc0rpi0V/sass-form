@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import RegistrationForm from '@/components/forms/RegistrationForm.vue';
+import RegistrationForm from '@/components/forms/public/RegistrationForm.vue';
 </script>
 
 <style scoped>

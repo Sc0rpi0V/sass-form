@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import QuestionForm from '@/components/forms/QuestionForm.vue';
+import QuestionForm from '@/components/forms/public/QuestionForm.vue';
 </script>
 
 <style scoped>

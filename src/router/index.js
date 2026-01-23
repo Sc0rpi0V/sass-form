@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import { useAuth } from '@/composables/useAuth';
-import { useUserAuth } from '@/composables/useUserAuth';
+import { useAuth } from '@/composables/auth/useAuth';
+import { useUserAuth } from '@/composables/auth/useUserAuth';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

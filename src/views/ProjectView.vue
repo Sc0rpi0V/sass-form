@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import ProjectRequestForm from '@/components/forms/ProjectRequestForm.vue';
+import ProjectRequestForm from '@/components/forms/business/ProjectRequestForm.vue';
 </script>
 
 <style scoped>

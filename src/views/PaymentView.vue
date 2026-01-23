@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import PaymentForm from '@/components/forms/PaymentForm.vue'
+import PaymentForm from '@/components/forms/business/PaymentForm.vue'
 </script>
 
 <style scoped>

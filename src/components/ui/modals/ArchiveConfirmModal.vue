@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import BaseButton from '@/components/ui/BaseButton.vue';
+import BaseButton from '@/components/ui/base/BaseButton.vue';
 
 const emit = defineEmits(['confirm', 'cancel']);
 

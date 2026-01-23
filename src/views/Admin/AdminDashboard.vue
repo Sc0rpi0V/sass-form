@@ -68,15 +68,15 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
-import { useAuth } from '@/composables/useAuth';
-import { useSubmissions } from '@/composables/useSubmissions';
+import { useAuth } from '@/composables/auth/useAuth';
+import { useSubmissions } from '@/composables/submissions/useSubmissions';
 
-import BaseButton from '@/components/ui/BaseButton.vue';
-import StatsPanel from '@/components/admin/StatsPanel.vue';
-import SearchBar from '@/components/admin/SearchBar.vue';
-import SubmissionsTable from '@/components/admin/SubmissionsTable.vue';
-import SubmissionModal from '@/components/ui/SubmissionModal.vue';
-import ArchiveConfirmModal from '@/components/ui/ArchiveConfirmModal.vue';
+import BaseButton from '@/components/ui/base/BaseButton.vue';
+import StatsPanel from '@/components/admin/dashboard/StatsPanel.vue';
+import SearchBar from '@/components/admin/dashboard/SearchBar.vue';
+import SubmissionsTable from '@/components/admin/submissions/SubmissionsTable.vue';
+import SubmissionModal from '@/components/ui/modals/SubmissionModal.vue';
+import ArchiveConfirmModal from '@/components/ui/modals/ArchiveConfirmModal.vue';
 
 /* -----------------------
    AUTH / ROUTER

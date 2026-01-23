@@ -68,7 +68,7 @@
 </template>
 
 <script setup>
-import { useForm } from '@/composables/useForm';
+import { useForm } from '@/composables/forms/useForm';
 import { useSubmissions } from '@/composables/submissions/useSubmissions';
 import { validators } from '@/utils/validators';
 import BaseInput from '@/components/ui/base/BaseInput.vue';

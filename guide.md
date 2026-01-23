@@ -66,7 +66,7 @@ Accédez à `http://localhost:5173`
 Le composable principal pour gérer vos formulaires :
 
 ```javascript
-import { useForm } from '@/composables/useForm';
+import { useForm } from '@/composables/forms/useForm';
 import { validators } from '@/utils/validators';
 
 const {

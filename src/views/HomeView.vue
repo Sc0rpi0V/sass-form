@@ -61,6 +61,15 @@
         </p>
         <span class="card-link">Accéder au formulaire →</span>
       </RouterLink>
+
+      <RouterLink to="/sondage" class="form-card">
+        <div class="card-icon">📊</div>
+        <h3 class="card-title">Sondage</h3>
+        <p class="card-description">
+          Formulaire de sondage avec échelle d'évaluation et questions ouvertes
+        </p>
+        <span class="card-link">Accéder au formulaire →</span>
+      </RouterLink>
     </div>
 
     <div class="features-section">

@@ -47,6 +47,12 @@ const router = createRouter({
       component: () => import('@/views/PaymentView.vue'),
       meta: { title: 'Demande de paiement' }
     },
+    {
+      path: '/sondage',
+      name: 'survey',
+      component: () => import('@/views/SurveyView.vue'),
+      meta: { title: 'Sondage' }
+    },
 
     // Routes Admin
     {

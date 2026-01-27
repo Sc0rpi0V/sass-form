@@ -42,6 +42,12 @@
       <div class="stat-label">{{ (stats.byType.payment || 0) > 1 ? 'Paiements' : 'Paiement' }}</div>
     </div>
 
+    <div class="stat-card">
+      <div class="stat-icon">📊</div>
+      <div class="stat-value">{{ stats.byType.survey || 0 }}</div>
+      <div class="stat-label">{{ (stats.byType.survey || 0) > 1 ? 'Sondages' : 'Sondage' }}</div>
+    </div>
+
     <div class="stat-card stat-card-highlight">
       <div class="stat-icon">📅</div>
       <div class="stat-value">{{ stats.thisMonth }}</div>

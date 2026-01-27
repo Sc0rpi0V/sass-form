@@ -9,6 +9,7 @@ const FORM_TYPES = {
   REGISTRATION: 'registration',
   NEWSLETTER: 'newsletter',
   PAYMENT: 'payment',
+  SURVEY: 'survey',
   QUESTION: 'question',
   PROJECT: 'project'
 };
@@ -38,6 +39,7 @@ export function useSubmissions() {
       registration: [],
       newsletter: [],
       payment: [],
+      survey: [],
       question: [],
       project: []
     };
@@ -281,6 +283,7 @@ export function useSubmissions() {
       registration: [],
       newsletter: [],
       payment: [],
+      survey: [],
       question: [],
       project: []
     };

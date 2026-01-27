@@ -7,74 +7,92 @@
         </header>
 
         <div class="modal-body">
-        <!-- Vue détails -->
-        <template v-if="!showArchiveConfirm">
+          <template v-if="!showArchiveConfirm">
             <div
-            v-for="(value, key) in submission"
-            :key="key"
-            class="detail-row"
+              v-for="(value, key) in filteredSubmission"
+              :key="key"
+              class="detail-row"
             >
-            <strong>{{ formatLabel(key) }} :</strong>
-            <span>{{ formatValue(value, key) }}</span>
+              <strong>{{ formatLabel(key) }} :</strong>
+              <span>{{ formatValue(value, key) }}</span>
             </div>
-        </template>
 
-        <!-- Vue confirmation archivage -->
-        <template v-else>
+            <div v-if="isSurvey && submission.answers" class="survey-answers">
+              <h3>Réponses au sondage</h3>
+
+              <div
+                v-for="(value, key) in submission.answers"
+                :key="key"
+                class="detail-row"
+              >
+                <strong>{{ formatSurveyQuestion(key) }} :</strong>
+
+                <!-- Cas particulier : note -->
+                <span v-if="key === 'q5'">
+                  ⭐ {{ value }} / 5
+                </span>
+
+                <span v-else>
+                  {{ value }}
+                </span>
+              </div>
+            </div>
+          </template>
+
+          <template v-else>
             <p>
-            Es-tu sûr de vouloir archiver cette demande ?
-            Cette action est définitive.
+              Es-tu sûr de vouloir archiver cette demande ?
+              Cette action est définitive.
             </p>
-        </template>
+          </template>
         </div>
 
         <footer class="modal-footer">
-            <template v-if="!showArchiveConfirm">
-                <BaseButton
-                variant="primary"
-                @click="answer"
-                :disabled="submission.status === 'answered'"
-                >
-                Répondre
-                </BaseButton>
+          <template v-if="!showArchiveConfirm">
+            <BaseButton
+              variant="primary"
+              @click="answer"
+              :disabled="submission.status === 'answered'"
+            >
+              Répondre
+            </BaseButton>
 
-                <BaseButton
-                variant="danger"
-                @click="showArchiveConfirm = true"
-                >
-                Archiver
-                </BaseButton>
+            <BaseButton
+              variant="danger"
+              @click="showArchiveConfirm = true"
+            >
+              Archiver
+            </BaseButton>
 
-                <BaseButton variant="outline" @click="close">
-                Fermer
-                </BaseButton>
-            </template>
+            <BaseButton variant="outline" @click="close">
+              Fermer
+            </BaseButton>
+          </template>
 
-            <template v-else>
-                <BaseButton
-                variant="outline"
-                @click="showArchiveConfirm = false"
-                >
-                Annuler
-                </BaseButton>
+          <template v-else>
+            <BaseButton
+              variant="outline"
+              @click="showArchiveConfirm = false"
+            >
+              Annuler
+            </BaseButton>
 
-                <BaseButton
-                variant="danger"
-                @click="confirmArchive"
-                >
-                Confirmer l’archivage
-                </BaseButton>
-            </template>
+            <BaseButton
+              variant="danger"
+              @click="confirmArchive"
+            >
+              Confirmer l’archivage
+            </BaseButton>
+          </template>
         </footer>
-
       </div>
     </div>
   </teleport>
 </template>
 
 <script setup>
+import { ref, computed } from 'vue';
 import BaseButton from '@/components/ui/base/BaseButton.vue';
-import { ref } from 'vue';
 
 const showArchiveConfirm = ref(false);
 
@@ -87,31 +105,36 @@ const props = defineProps({
   }
 });
 
+const emit = defineEmits(['close', 'answer', 'archive']);
+
+const close = () => emit('close');
+const answer = () => emit('answer', props.submission);
+
 const confirmArchive = () => {
   emit('archive', props.submission);
   showArchiveConfirm.value = false;
 };
 
-const emit = defineEmits(['close', 'answer', 'archive']);
+const isSurvey = computed(() => props.submission.formType === 'survey');
 
-const close = () => emit('close');
-
-const answer = () => emit('answer', props.submission);
-
-const archive = () => emit('archive', props.submission);
+const filteredSubmission = computed(() => {
+  const { answers, ...rest } = props.submission;
+  return rest;
+});
 
 const formatLabel = (key) => {
   const labels = {
     firstName: 'Prénom',
     lastName: 'Nom',
     email: 'Email',
-    password: 'Mot de passe',
     formType: 'Type de formulaire',
     paymentMethod: 'Méthode de paiement',
     amount: 'Montant',
     submittedAt: 'Date de soumission',
-    status: 'Statut'
+    status: 'Statut',
+    surveyTitle: 'Sondage'
   };
+
   return labels[key] || key;
 };
 
@@ -135,6 +158,19 @@ const formatValue = (value, key) => {
   }
 
   return value;
+};
+
+const formatSurveyQuestion = (key) => {
+  const questions = {
+    q1: 'Nom',
+    q2: 'Prénom',
+    q3: 'Email',
+    q4: 'Profession',
+    q5: 'Note',
+    q6: 'Commentaire'
+  };
+
+  return questions[key] || key;
 };
 </script>
 
@@ -185,5 +221,17 @@ const formatValue = (value, key) => {
   gap: $spacing-md;
   margin-bottom: $spacing-sm;
   font-size: $font-size-sm;
+}
+
+.survey-answers {
+  margin-top: $spacing-lg;
+  padding-top: $spacing-md;
+  border-top: 1px solid $color-border;
+
+  h3 {
+    margin-bottom: $spacing-md;
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 </style>

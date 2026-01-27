@@ -110,6 +110,7 @@ const tabs = [
   { key: 'question', label: 'Questions' },
   { key: 'project', label: 'Projets' },
   { key: 'payment', label: 'Paiements' },
+  { key: 'survey', label: 'Sondages' },
   { key: 'archived', label: 'Archivées' }
 ];
 

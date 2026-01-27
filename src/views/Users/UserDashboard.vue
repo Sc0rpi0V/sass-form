@@ -54,6 +54,7 @@ const tabs = [
   { key: 'registration', label: 'Inscription' },
   { key: 'newsletter', label: 'Newsletter' },
   { key: 'question', label: 'Questions' },
+  { key: 'survey', label: 'Sondages' },
   { key: 'project', label: 'Projets' }
 ];
 
@@ -95,6 +96,12 @@ const columnsConfig = {
     { key: 'email', label: 'Email' },
     { key: 'projectType', label: 'Type' },
     { key: 'budget', label: 'Budget' },
+    { key: 'submittedAt', label: 'Date' }
+  ],
+  survey: [
+    { key: 'firstName', label: 'Prénom' },
+    { key: 'lastName', label: 'Nom' },
+    { key: 'email', label: 'Email' },
     { key: 'submittedAt', label: 'Date' }
   ]
 };

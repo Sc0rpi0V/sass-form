@@ -53,6 +53,12 @@ const router = createRouter({
       component: () => import('@/views/SurveyView.vue'),
       meta: { title: 'Sondage' }
     },
+    {
+      path: '/recherche',
+      name: 'search',
+      component: () => import('@/views/SearchView.vue'),
+      meta: { title: 'Recherche' }
+    },
 
     // Routes Admin
     {

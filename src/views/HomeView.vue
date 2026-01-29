@@ -70,6 +70,15 @@
         </p>
         <span class="card-link">Accéder au formulaire →</span>
       </RouterLink>
+
+      <RouterLink to="/recherche" class="form-card">
+        <div class="card-icon">📊</div>
+        <h3 class="card-title">Recherche</h3>
+        <p class="card-description">
+          Formulaire de recherche avancée avec suggestions et filtres
+        </p>
+        <span class="card-link">Accéder au formulaire →</span>
+      </RouterLink>
     </div>
 
     <div class="features-section">

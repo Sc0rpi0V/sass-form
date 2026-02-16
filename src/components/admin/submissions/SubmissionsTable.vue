@@ -188,7 +188,9 @@ const formatValue = (value, key) => {
       question: 'Question',
       project: 'Projet',
       payment: 'Paiement',
-      survey: 'Sondage'
+      survey: 'Sondage',
+      search: 'Recherche',
+      contentUpload: 'Soumission de contenu'
     };
     return types[value] || value;
   }

@@ -55,7 +55,9 @@ const tabs = [
   { key: 'newsletter', label: 'Newsletter' },
   { key: 'question', label: 'Questions' },
   { key: 'survey', label: 'Sondages' },
-  { key: 'project', label: 'Projets' }
+  { key: 'project', label: 'Projets' },
+  { key: 'search', label: 'Recherches' },
+  { key: 'contentUpload', label: 'Soumissions de contenu' }
 ];
 
 const columnsConfig = {
@@ -103,7 +105,21 @@ const columnsConfig = {
     { key: 'lastName', label: 'Nom' },
     { key: 'email', label: 'Email' },
     { key: 'submittedAt', label: 'Date' }
-  ]
+  ],
+  search: [
+    { key: 'query', label: 'Requête' },
+    { key: 'filters', label: 'Filtres' },
+    { key: 'submittedAt', label: 'Date' }
+  ],
+  contentUpload: [
+    { key: 'firstName', label: 'Prénom' },
+    { key: 'lastName', label: 'Nom' },
+    { key: 'email', label: 'Email' },
+    { key: 'category', label: 'Type de contenu' },
+    { key: 'title', label: 'Titre' },
+    { key: 'files', label: 'Fichier' },
+    { key: 'description', label: 'Description' }
+],
 };
 
 const currentColumns = computed(() => columnsConfig[activeTab.value] || columnsConfig.all);

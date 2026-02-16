@@ -48,6 +48,18 @@
       <div class="stat-label">{{ (stats.byType.survey || 0) > 1 ? 'Sondages' : 'Sondage' }}</div>
     </div>
 
+    <div class="stat-card">
+      <div class="stat-icon">🎛️</div>
+      <div class="stat-value">{{ stats.byType.search || 0 }}</div>
+      <div class="stat-label">{{ (stats.byType.search || 0) > 1 ? 'Recherches' : 'Recherche' }}</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">📁</div>
+      <div class="stat-value">{{ stats.byType.contentUpload || 0 }}</div>
+      <div class="stat-label">{{ (stats.byType.contentUpload || 0) > 1 ? 'Soumissions de contenu' : 'Soumission de contenu' }}</div>
+    </div>
+
     <div class="stat-card stat-card-highlight">
       <div class="stat-icon">📅</div>
       <div class="stat-value">{{ stats.thisMonth }}</div>

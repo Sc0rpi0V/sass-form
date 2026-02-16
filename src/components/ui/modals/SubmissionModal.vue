@@ -14,7 +14,31 @@
               class="detail-row"
             >
               <strong>{{ formatLabel(key) }} :</strong>
-              <span>{{ formatValue(value, key) }}</span>
+
+              <!-- affichage normal -->
+              <span v-if="key !== 'files'">
+                {{ formatValue(value, key) }}
+              </span>
+
+              <!-- affichage fichiers dans la même ligne -->
+              <div v-else class="files-inline">
+                <div
+                  v-for="file in value"
+                  :key="file.name"
+                  class="file-inline-item"
+                >
+                  <span>{{ file.name }}</span>
+
+                  <BaseButton
+                    variant="primary"
+                    size="sm"
+                    @click="downloadFile(file)"
+                    class="filedl"
+                  >
+                    Télécharger
+                  </BaseButton>
+                </div>
+              </div>
             </div>
 
             <div v-if="isSurvey && submission.answers" class="survey-answers">
@@ -132,7 +156,10 @@ const formatLabel = (key) => {
     amount: 'Montant',
     submittedAt: 'Date de soumission',
     status: 'Statut',
-    surveyTitle: 'Sondage'
+    surveyTitle: 'Sondage',
+    title: 'Titre',
+    description: 'Description',
+    category: 'Catégorie'
   };
 
   return labels[key] || key;
@@ -172,6 +199,14 @@ const formatSurveyQuestion = (key) => {
 
   return questions[key] || key;
 };
+
+const downloadFile = (file) => {
+  const link = document.createElement('a');
+  link.href = file.dataUrl;
+  link.download = file.name;
+  link.click();
+};
+
 </script>
 
 <style scoped lang="scss">
@@ -233,5 +268,10 @@ const formatSurveyQuestion = (key) => {
     font-size: 1rem;
     font-weight: 600;
   }
+}
+
+.filedl {
+  width: 120px;
+  margin-left: 15px;
 }
 </style>

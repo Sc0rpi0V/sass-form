@@ -79,6 +79,15 @@
         </p>
         <span class="card-link">Accéder au formulaire →</span>
       </RouterLink>
+      
+      <RouterLink to="/content-upload" class="form-card">
+        <div class="card-icon">📤</div>
+        <h3 class="card-title">Soumettre du contenu</h3>
+        <p class="card-description">
+          Formulaire de soumission de contenu avec upload de fichiers et catégorisation
+        </p> 
+        <span class="card-link">Accéder au formulaire →</span>
+      </RouterLink>
     </div>
 
     <div class="features-section">

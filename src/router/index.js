@@ -59,6 +59,12 @@ const router = createRouter({
       component: () => import('@/views/SearchView.vue'),
       meta: { title: 'Recherche' }
     },
+    {
+      path: '/content-upload',
+      name: 'contentUpload',
+      component: () => import('@/views/ContentUploadView.vue'),
+      meta: { title: 'Soumettre du contenu' }
+    },
 
     // Routes Admin
     {

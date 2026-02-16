@@ -11,7 +11,9 @@ const FORM_TYPES = {
   PAYMENT: 'payment',
   SURVEY: 'survey',
   QUESTION: 'question',
-  PROJECT: 'project'
+  PROJECT: 'project',
+  SEARCH: 'search',
+  CONTENT_UPLOAD: 'contentUpload'
 };
 
 /**
@@ -41,7 +43,9 @@ export function useSubmissions() {
       payment: [],
       survey: [],
       question: [],
-      project: []
+      project: [],
+      search: [],
+      contentUpload: []
     };
   };
 
@@ -285,7 +289,9 @@ export function useSubmissions() {
       payment: [],
       survey: [],
       question: [],
-      project: []
+      project: [],
+      search: [],
+      contentUpload: []
     };
     saveSubmissions(empty);
     console.log('All submissions cleared');

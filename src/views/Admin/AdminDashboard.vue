@@ -111,6 +111,8 @@ const tabs = [
   { key: 'project', label: 'Projets' },
   { key: 'payment', label: 'Paiements' },
   { key: 'survey', label: 'Sondages' },
+  { key: 'search', label: 'Recherches' },
+  { key: 'contentUpload', label: 'Soumissions de contenu' },
   { key: 'archived', label: 'Archivées' }
 ];
 

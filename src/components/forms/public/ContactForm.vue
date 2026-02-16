@@ -6,14 +6,25 @@
     </p>
 
     <BaseInput
-      id="name"
+      id="lastName"
       label="Nom complet"
-      :model-value="formData.name"
+      :model-value="formData.lastName"
       placeholder="Votre nom"
       required
-      :error="getError('name')"
-      @update:model-value="handleInput('name', $event)"
-      @blur="handleBlur('name')"
+      :error="getError('lastName')"
+      @update:model-value="handleInput('lastName', $event)"
+      @blur="handleBlur('lastName')"
+    />
+
+    <BaseInput
+      id="firstName"
+      label="Prénom"
+      :model-value="formData.firstName"
+      placeholder="Votre prénom"
+      required
+      :error="getError('firstName')"
+      @update:model-value="handleInput('firstName', $event)"
+      @blur="handleBlur('firstName')"
     />
 
     <BaseInput
@@ -90,7 +101,8 @@ import BaseTextarea from '@/components/ui/base/BaseTextarea.vue';
 import BaseButton from '@/components/ui/base/BaseButton.vue';
 
 const initialValues = {
-  name: '',
+  lastName: '',
+  firstName: '',
   email: '',
   phone: '',
   subject: '',
@@ -98,7 +110,8 @@ const initialValues = {
 };
 
 const validationRules = {
-  name: [validators.required, validators.minLength(2)],
+  lastName: [validators.required, validators.minLength(2)],
+  firstName: [validators.required, validators.minLength(2)],
   email: [validators.required, validators.email],
   phone: [validators.phone],
   subject: [validators.required, validators.minLength(3)],

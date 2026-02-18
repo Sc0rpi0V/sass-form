@@ -91,6 +91,15 @@ const router = createRouter({
       }
     },
     {
+      path: '/admin/cgu',
+      name: 'admin-cgu',
+      component: () => import('@/views/Admin/AdminCGU.vue'),
+      meta: {
+        title: 'Gestion des CGU',
+        requiresAuth: true
+      }
+    },
+    {
       path: '/user/login',
       name: 'user-login',
       component: () => import('@/views/Users/UserLogin.vue'),

@@ -59,14 +59,29 @@
       @blur="handleBlur('password')"
     />
 
-    <BaseCheckbox
-      id="terms"
-      label="J'accepte les conditions générales d'utilisation"
-      :model-value="formData.terms"
-      required
-      :error="getError('terms')"
-      @update:model-value="handleInput('terms', $event)"
-      @blur="handleBlur('terms')"
+    <div class="cgu-section">
+      <BaseCheckbox
+        id="terms"
+        label="J'accepte les conditions générales d'utilisation"
+        :model-value="formData.terms"
+        required
+        :error="getError('terms')"
+        @update:model-value="handleInput('terms', $event)"
+        @blur="handleBlur('terms')"
+      />
+      <BaseButton
+        type="button"
+        variant="outline"
+        @click="showCGUModal = true"
+        class="view-cgu-btn"
+      >
+        Lire les CGU
+      </BaseButton>
+    </div>
+
+    <CGUModal
+      v-if="showCGUModal"
+      @close="showCGUModal = false"
     />
 
     <div v-if="submitError" class="alert alert-error">
@@ -89,12 +104,14 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { useForm } from '@/composables/forms/useForm';
 import { useSubmissions } from '@/composables/submissions/useSubmissions';
 import { validators } from '@/utils/validators';
 import BaseInput from '@/components/ui/base/BaseInput.vue';
 import BaseCheckbox from '@/components/ui/base/BaseCheckbox.vue';
 import BaseButton from '@/components/ui/base/BaseButton.vue';
+import CGUModal from '@/components/ui/modals/CGUModal.vue';
 
 const initialValues = {
   firstName: '',
@@ -128,6 +145,8 @@ const {
 
 const { addSubmission } = useSubmissions();
 
+const showCGUModal = ref(false);
+
 const onSubmit = () => {
   handleSubmit(async (data) => {
     // Simuler un appel API
@@ -141,7 +160,9 @@ const onSubmit = () => {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use '@/assets/styles/index' as *;
+
 .form-container {
   max-width: 500px;
   margin: 0 auto;
@@ -181,5 +202,27 @@ const onSubmit = () => {
   background-color: #f0fdf4;
   color: #166534;
   border: 1px solid #bbf7d0;
+}
+
+.cgu-section {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: $spacing-md;
+  }
+
+  .view-cgu-btn {
+    font-size: $font-size-sm;
+    width: 100%;
+
+    @include tablet {
+      width: auto;
+      margin-top: $spacing-xs;
+    }
+  }
 }
 </style>

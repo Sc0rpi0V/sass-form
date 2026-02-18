@@ -1,17 +1,10 @@
 <template>
-  <div class="admin-dashboard">
-    <!-- Header -->
-    <header class="dashboard-header">
+  <div class="admin-layout">
+    <AdminSidebar />
+    <div class="admin-content">
+      <header class="dashboard-header">
       <div class="container">
-        <div class="header-content">
-          <h1 class="dashboard-title">Dashboard Administrateur</h1>
-          <div class="header-actions">
-            <span class="user-info">{{ user?.name }}</span>
-            <BaseButton variant="outline" @click="handleLogout" class="logout-btn">
-              Déconnexion
-            </BaseButton>
-          </div>
-        </div>
+        <h1 class="dashboard-title">Dashboard Administrateur</h1>
       </div>
     </header>
 
@@ -62,15 +55,16 @@
         />
       </div>
     </main>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
-import { useAuth } from '@/composables/auth/useAuth';
 import { useSubmissions } from '@/composables/submissions/useSubmissions';
 
+import AdminSidebar from '@/components/admin/sidebar/AdminSidebar.vue';
 import BaseButton from '@/components/ui/base/BaseButton.vue';
 import StatsPanel from '@/components/admin/dashboard/StatsPanel.vue';
 import SearchBar from '@/components/admin/dashboard/SearchBar.vue';
@@ -79,10 +73,9 @@ import SubmissionModal from '@/components/ui/modals/SubmissionModal.vue';
 import ArchiveConfirmModal from '@/components/ui/modals/ArchiveConfirmModal.vue';
 
 /* -----------------------
-   AUTH / ROUTER
+   ROUTER
 ----------------------- */
 const router = useRouter();
-const { user, logout } = useAuth();
 
 /* -----------------------
    DATA
@@ -251,24 +244,29 @@ const cancelArchive = () => {
 };
 
 /* -----------------------
-   SEARCH / LOGOUT
+   SEARCH
 ----------------------- */
 const handleSearch = (query) => {
   searchQuery.value = query;
-};
-
-const handleLogout = () => {
-  logout();
-  router.push('/admin/login');
 };
 </script>
 
 <style scoped lang="scss">
 @use '@/assets/styles/index' as *;
 
-.admin-dashboard {
+.admin-layout {
+  display: flex;
   min-height: 100vh;
+}
+
+.admin-content {
+  flex: 1;
+  margin-left: 250px;
   background: #f3f4f6;
+
+  @include tablet {
+    margin-left: 0;
+  }
 }
 
 .dashboard-header {
@@ -277,14 +275,6 @@ const handleLogout = () => {
   padding: $spacing-xl 0;
   box-shadow: $shadow-sm;
   border-radius: 8px;
-}
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: $spacing-lg;
-  flex-wrap: wrap;
 }
 
 .dashboard-title {
@@ -296,27 +286,6 @@ const handleLogout = () => {
   @include tablet {
     font-size: $font-size-4xl;
   }
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: $spacing-lg;
-}
-
-.user-info {
-  font-size: $font-size-sm;
-  color: $color-text-light;
-  font-weight: 500;
-  display: none;
-
-  @include tablet {
-    display: block;
-  }
-}
-
-.logout-btn {
-  font-size: $font-size-sm;
 }
 
 .dashboard-main {

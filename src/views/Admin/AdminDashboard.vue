@@ -25,16 +25,16 @@
         <SearchBar @search="handleSearch" />
 
         <!-- Tabs Navigation -->
-        <div class="tabs-nav">
-          <button
-            v-for="tab in tabs"
-            :key="tab.key"
-            :class="['tab-btn', { active: activeTab === tab.key }]"
-            @click="activeTab = tab.key"
-          >
-            {{ tab.label }}
-            <span class="tab-count">{{ getCount(tab.key) }}</span>
-          </button>
+        <div class="tabs-select">
+          <select v-model="activeTab" class="tab-dropdown">
+            <option
+              v-for="tab in tabs"
+              :key="tab.key"
+              :value="tab.key"
+            >
+              {{ tab.label }} ({{ getCount(tab.key) }})
+            </option>
+          </select>
         </div>
 
         <SubmissionsTable
@@ -323,33 +323,17 @@ const handleLogout = () => {
   padding: $spacing-2xl 0;
 }
 
-.tabs-nav {
-  display: flex;
-  gap: $spacing-sm;
+.tabs-select {
   margin-bottom: $spacing-xl;
-  overflow-x: auto;
-  padding-bottom: $spacing-xs;
 }
 
-.tab-btn {
-  display: flex;
-  align-items: center;
-  gap: $spacing-xs;
+.tab-dropdown {
   padding: $spacing-md $spacing-lg;
-  background: $color-background;
-  border: 2px solid $color-border;
   border-radius: $border-radius-lg;
+  border: 2px solid $color-border;
   font-size: $font-size-sm;
-  font-weight: 500;
-  color: $color-text;
+  background: $color-background;
   cursor: pointer;
-  transition: all $transition-speed $transition-timing;
-
-  &.active {
-    background: $color-primary;
-    color: white;
-    border-color: $color-primary;
-  }
 }
 
 .tab-count {

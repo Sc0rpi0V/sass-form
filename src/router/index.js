@@ -100,6 +100,24 @@ const router = createRouter({
       }
     },
     {
+      path: '/admin/cgv',
+      name: 'admin-cgv',
+      component: () => import('@/views/Admin/AdminCGV.vue'),
+      meta: {
+        title: 'Gestion des CGV',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/admin/policy',
+      name: 'admin-policy',
+      component: () => import('@/views/Admin/AdminPolicy.vue'),
+      meta: {
+        title: 'Gestion de la politique de confidentialité',
+        requiresAuth: true
+      }
+    },
+    {
       path: '/user/login',
       name: 'user-login',
       component: () => import('@/views/Users/UserLogin.vue'),

@@ -4,6 +4,7 @@ import { computed } from 'vue';
 
 const route = useRoute();
 const isHomePage = computed(() => route.path === '/');
+const isAdminPage = computed(() => route.path.startsWith('/admin'));
 </script>
 
 <template>
@@ -17,7 +18,7 @@ const isHomePage = computed(() => route.path === '/');
       </div>
     </header>
 
-    <nav v-if="!isHomePage" class="app-nav">
+    <nav v-if="!isHomePage && !isAdminPage" class="app-nav">
       <div class="container">
         <RouterLink to="/" class="nav-back">← Retour à l'accueil</RouterLink>
       </div>

@@ -45,6 +45,28 @@
             <span class="menu-label">CGU</span>
           </router-link>
         </li>
+        <li>
+          <router-link
+            to="/admin/cgv"
+            class="menu-item"
+            :class="{ 'is-active': isActive('/admin/cgv') }"
+            @click="closeSidebar"
+          >
+            <span class="menu-icon">💰</span>
+            <span class="menu-label">CGV</span>
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            to="/admin/policy"
+            class="menu-item"
+            :class="{ 'is-active': isActive('/admin/policy') }"
+            @click="closeSidebar"
+          >
+            <span class="menu-icon">📄</span>
+            <span class="menu-label">Politique de confidentialité</span>
+          </router-link>
+        </li>
       </ul>
 
       <div class="sidebar-footer">

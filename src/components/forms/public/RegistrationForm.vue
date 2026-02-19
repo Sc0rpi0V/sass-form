@@ -42,6 +42,7 @@
       label="Téléphone"
       :model-value="formData.phone"
       placeholder="06 12 34 56 78"
+      required
       :error="getError('phone')"
       @update:model-value="handleInput('phone', $event)"
       @blur="handleBlur('phone')"
@@ -76,6 +77,46 @@
         class="view-cgu-btn"
       >
         Lire les CGU
+      </BaseButton>
+    </div>
+
+    <div class="cgv-section">
+      <BaseCheckbox
+        id="cgv"
+        label="J'accepte les conditions générales de vente"
+        :model-value="formData.cgv"
+        required
+        :error="getError('cgv')"
+        @update:model-value="handleInput('cgv', $event)"
+        @blur="handleBlur('cgv')"
+      />
+      <BaseButton
+        type="button"
+        variant="outline"
+        @click="$emit('view-cgv')"
+        class="view-cgv-btn"
+      >
+        Lire les CGV
+      </BaseButton>
+    </div>
+
+    <div class="policy-section">
+      <BaseCheckbox
+        id="privacy"
+        label="J'accepte la politique de confidentialité"
+        :model-value="formData.privacy"
+        required
+        :error="getError('privacy')"
+        @update:model-value="handleInput('privacy', $event)"
+        @blur="handleBlur('privacy')"
+      />
+      <BaseButton
+        type="button"
+        variant="outline"
+        @click="$emit('view-privacy')"
+        class="view-privacy-btn"
+      >
+        Lire la politique de confidentialité
       </BaseButton>
     </div>
 
@@ -204,7 +245,9 @@ const onSubmit = () => {
   border: 1px solid #bbf7d0;
 }
 
-.cgu-section {
+.cgu-section,
+.cgv-section,
+.policy-section {
   display: flex;
   flex-direction: column;
   gap: $spacing-sm;

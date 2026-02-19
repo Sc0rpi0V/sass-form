@@ -148,7 +148,7 @@ import { useForm } from '@/composables/forms/useForm';
 import { useSubmissions } from '@/composables/submissions/useSubmissions';
 import { validators } from '@/utils/validators';
 import BaseInput from '@/components/ui/base/BaseInput.vue';
-import BaseSelect from '@/components/ui/BaseSelect.vue';
+import BaseSelect from '@/components/ui/base/BaseSelect.vue';
 import BaseButton from '@/components/ui/base/BaseButton.vue';
 
 const initialValues = {

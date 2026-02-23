@@ -17,14 +17,14 @@
     />
 
     <BaseInput
-        id="firstName"
-        label="Prénom"
-        :model-value="formData.firstName"
-        placeholder="Votre prénom"
-        required
-        :error="getError('firstName')"
-        @update:model-value="handleInput('firstName', $event)"
-        @blur="handleBlur('firstName')"
+      id="firstName"
+      label="Prénom"
+      :model-value="formData.firstName"
+      placeholder="Votre prénom"
+      required
+      :error="getError('firstName')"
+      @update:model-value="handleInput('firstName', $event)"
+      @blur="handleBlur('firstName')"
     />
 
     <BaseInput
@@ -101,6 +101,31 @@
       </ul>
     </div>
 
+    <div v-for="item in legalItems" :key="item.key" class="legal-section">
+      <BaseCheckbox
+        :id="item.key"
+        :label="item.label"
+        :model-value="formData[item.key]"
+        required
+        :error="getError(item.key)"
+        @update:model-value="handleInput(item.key, $event)"
+        @blur="handleBlur(item.key)"
+      />
+      <BaseButton
+        type="button"
+        variant="outline"
+        @click="openModal(item.key)"
+      >
+        {{ item.buttonLabel }}
+      </BaseButton>
+    </div>
+
+    <component
+      :is="activeModalComponent"
+      v-if="activeModalComponent"
+      @close="closeModal"
+    />
+
     <div v-if="submitError" class="alert alert-error">
       {{ submitError }}
     </div>
@@ -122,12 +147,63 @@
 </template>
 
 <script setup>
+import { ref, computed } from 'vue';
 import { useForm } from '@/composables/forms/useForm';
 import { useSubmissions } from '@/composables/submissions/useSubmissions';
 import { validators } from '@/utils/validators';
+
 import BaseInput from '@/components/ui/base/BaseInput.vue';
 import BaseTextarea from '@/components/ui/base/BaseTextarea.vue';
 import BaseButton from '@/components/ui/base/BaseButton.vue';
+import BaseCheckbox from '@/components/ui/base/BaseCheckbox.vue';
+
+import CGUModal from '@/components/ui/modals/CGUModal.vue';
+import CGVModal from '@/components/ui/modals/CGVModal.vue';
+import PolicyModal from '@/components/ui/modals/PolicyModal.vue';
+
+import { useCGU } from '@/composables/cgu/useCGU';
+import { useCGV } from '@/composables/cgv/useCGV';
+import { usePolicy } from '@/composables/policy/usePolicy';
+
+const { activeVersion: activeCGU } = useCGU();
+const { activeVersion: activeCGV } = useCGV();
+const { activeVersion: activePolicy } = usePolicy();
+
+const legalConfig = {
+  cgu: {
+    label: "J'accepte les conditions générales d'utilisation",
+    buttonLabel: "Lire les CGU",
+    modal: CGUModal,
+    isActive: () => !!activeCGU.value
+  },
+  cgv: {
+    label: "J'ai lu et j'accepte les conditions générales de vente",
+    buttonLabel: "Lire les CGV",
+    modal: CGVModal,
+    isActive: () => !!activeCGV.value
+  },
+  policy: {
+    label: "J'ai lu et j'accepte la politique de confidentialité",
+    buttonLabel: "Lire la politique de confidentialité",
+    modal: PolicyModal,
+    isActive: () => !!activePolicy.value
+  }
+};
+
+const legalItems = computed(() =>
+  Object.entries(legalConfig)
+    .filter(([, cfg]) => cfg.isActive())
+    .map(([key, cfg]) => ({ key, ...cfg }))
+);
+
+const openModalKey = ref(null);
+const openModal = (key) => (openModalKey.value = key);
+const closeModal = () => (openModalKey.value = null);
+
+const activeModalComponent = computed(() => {
+  if (!openModalKey.value) return null;
+  return legalConfig[openModalKey.value]?.modal ?? null;
+});
 
 const initialValues = {
   lastName: '',
@@ -136,20 +212,18 @@ const initialValues = {
   category: '',
   title: '',
   description: '',
-  files: []
+  files: [],
+  cgu: false,
+  cgv: false,
+  policy: false
 };
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024;
-
 const fileValidator = (files) => {
   if (!files || !files.length) return 'Au moins un fichier est requis';
-
   for (const file of files) {
-    if (file.size > MAX_FILE_SIZE) {
-      return `Le fichier ${file.name} dépasse 5MB`;
-    }
+    if (file.size > MAX_FILE_SIZE) return `Le fichier ${file.name} dépasse 5MB`;
   }
-
   return true;
 };
 
@@ -160,7 +234,10 @@ const validationRules = {
   category: [validators.required],
   title: [validators.required, validators.minLength(3)],
   description: [validators.required, validators.minLength(10)],
-  files: [fileValidator]
+  files: [fileValidator],
+  cgu: [validators.required],
+  cgv: activeCGV.value ? [validators.required] : [],
+  policy: activePolicy.value ? [validators.required] : []
 };
 
 const {
@@ -173,9 +250,7 @@ const {
   handleSubmit,
   resetForm,
   getError
-} = useForm(initialValues, validationRules, {
-  persistKey: 'contentUploadForm'
-});
+} = useForm(initialValues, validationRules, { persistKey: 'contentUploadForm' });
 
 const { addSubmission } = useSubmissions();
 
@@ -184,13 +259,17 @@ const handleFileChange = (event) => {
   handleInput('files', files);
 };
 
-const formatSize = (bytes) => {
-  return (bytes / 1024 / 1024).toFixed(2) + ' MB';
-};
+const formatSize = (bytes) => (bytes / 1024 / 1024).toFixed(2) + ' MB';
+
+const fileToBase64 = (file) =>
+  new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.readAsDataURL(file);
+  });
 
 const onSubmit = () => {
   handleSubmit(async (data) => {
-
     await new Promise(resolve => setTimeout(resolve, 1500));
 
     const serializedFiles = await Promise.all(
@@ -284,5 +363,27 @@ const onSubmit = () => {
   background: #f0fdf4;
   color: #166534;
   border: $border-width solid #bbf7d0;
+}
+
+.legal-section {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: $spacing-md;
+  }
+
+  .view-cgu-btn {
+    font-size: $font-size-sm;
+    width: 100%;
+
+    @include tablet {
+      width: auto;
+      margin-top: $spacing-xs;
+    }
+  }
 }
 </style>

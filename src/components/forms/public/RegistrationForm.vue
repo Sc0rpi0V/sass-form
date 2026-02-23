@@ -60,69 +60,34 @@
       @blur="handleBlur('password')"
     />
 
-    <div class="cgu-section">
+    <div
+      v-for="item in legalItems"
+      :key="item.key"
+      class="legal-section"
+    >
       <BaseCheckbox
-        id="terms"
-        label="J'accepte les conditions générales d'utilisation"
-        :model-value="formData.terms"
+        :id="item.key"
+        :label="item.label"
+        :model-value="formData[item.key]"
         required
-        :error="getError('terms')"
-        @update:model-value="handleInput('terms', $event)"
-        @blur="handleBlur('terms')"
+        :error="getError(item.key)"
+        @update:model-value="handleInput(item.key, $event)"
+        @blur="handleBlur(item.key)"
       />
+
       <BaseButton
         type="button"
         variant="outline"
-        @click="showCGUModal = true"
-        class="view-cgu-btn"
+        @click="openModal(item.key)"
       >
-        Lire les CGU
+        {{ item.buttonLabel }}
       </BaseButton>
     </div>
 
-    <div class="cgv-section">
-      <BaseCheckbox
-        id="cgv"
-        label="J'accepte les conditions générales de vente"
-        :model-value="formData.cgv"
-        required
-        :error="getError('cgv')"
-        @update:model-value="handleInput('cgv', $event)"
-        @blur="handleBlur('cgv')"
-      />
-      <BaseButton
-        type="button"
-        variant="outline"
-        @click="$emit('view-cgv')"
-        class="view-cgv-btn"
-      >
-        Lire les CGV
-      </BaseButton>
-    </div>
-
-    <div class="policy-section">
-      <BaseCheckbox
-        id="privacy"
-        label="J'accepte la politique de confidentialité"
-        :model-value="formData.privacy"
-        required
-        :error="getError('privacy')"
-        @update:model-value="handleInput('privacy', $event)"
-        @blur="handleBlur('privacy')"
-      />
-      <BaseButton
-        type="button"
-        variant="outline"
-        @click="$emit('view-privacy')"
-        class="view-privacy-btn"
-      >
-        Lire la politique de confidentialité
-      </BaseButton>
-    </div>
-
-    <CGUModal
-      v-if="showCGUModal"
-      @close="showCGUModal = false"
+    <component
+      :is="activeModalComponent"
+      v-if="activeModalComponent"
+      @close="closeModal"
     />
 
     <div v-if="submitError" class="alert alert-error">
@@ -137,6 +102,7 @@
       <BaseButton type="submit" :loading="isSubmitting">
         S'inscrire
       </BaseButton>
+
       <BaseButton type="button" variant="outline" @click="resetForm">
         Réinitialiser
       </BaseButton>
@@ -145,14 +111,69 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
+
 import { useForm } from '@/composables/forms/useForm';
 import { useSubmissions } from '@/composables/submissions/useSubmissions';
 import { validators } from '@/utils/validators';
+
 import BaseInput from '@/components/ui/base/BaseInput.vue';
 import BaseCheckbox from '@/components/ui/base/BaseCheckbox.vue';
 import BaseButton from '@/components/ui/base/BaseButton.vue';
+
 import CGUModal from '@/components/ui/modals/CGUModal.vue';
+import CGVModal from '@/components/ui/modals/CGVModal.vue';
+import PolicyModal from '@/components/ui/modals/PolicyModal.vue';
+
+import { useCGV } from '@/composables/cgv/useCGV';
+import { useCGU } from '@/composables/cgu/useCGU';
+import { usePolicy } from '@/composables/policy/usePolicy';
+
+const { activeVersion: activeCGV } = useCGV();
+const { activeVersion: activeCGU } = useCGU();
+const { activeVersion: activePolicy } = usePolicy();
+
+const legalConfig = {
+  cgu: {
+    label: "J'accepte les conditions générales d'utilisation",
+    buttonLabel: 'Lire les CGU',
+    modal: CGUModal,
+    isActive: () => !!activeCGU.value
+  },
+  cgv: {
+    label: "J'ai lu et j'accepte les conditions générales de vente",
+    buttonLabel: 'Lire les CGV',
+    modal: CGVModal,
+    isActive: () => !!activeCGV.value
+  },
+  policy: {
+    label: "J'ai lu et j'accepte la politique de confidentialité",
+    buttonLabel: 'Lire la politique de confidentialité',
+    modal: PolicyModal,
+    isActive: () => !!activePolicy.value
+  }
+};
+
+const legalItems = computed(() =>
+  Object.entries(legalConfig)
+    .filter(([, cfg]) => cfg.isActive())
+    .map(([key, cfg]) => ({ key, ...cfg }))
+);
+
+const openModalKey = ref(null);
+
+const openModal = (key) => {
+  openModalKey.value = key;
+};
+
+const closeModal = () => {
+  openModalKey.value = null;
+};
+
+const activeModalComponent = computed(() => {
+  if (!openModalKey.value) return null;
+  return legalConfig[openModalKey.value]?.modal ?? null;
+});
 
 const initialValues = {
   firstName: '',
@@ -160,7 +181,9 @@ const initialValues = {
   email: '',
   phone: '',
   password: '',
-  terms: false
+  cgu: false,
+  cgv: false,
+  policy: false
 };
 
 const validationRules = {
@@ -169,7 +192,9 @@ const validationRules = {
   email: [validators.required, validators.email],
   phone: [validators.phone],
   password: [validators.required, validators.minLength(8)],
-  terms: [validators.required]
+  cgu: legalConfig.cgu.isActive() ? [validators.required] : [],
+  cgv: legalConfig.cgv.isActive() ? [validators.required] : [],
+  policy: legalConfig.policy.isActive() ? [validators.required] : []
 };
 
 const {
@@ -182,20 +207,16 @@ const {
   handleSubmit,
   resetForm,
   getError
-} = useForm(initialValues, validationRules, { persistKey: 'registration-form' });
+} = useForm(initialValues, validationRules, {
+  persistKey: 'registration-form'
+});
 
 const { addSubmission } = useSubmissions();
 
-const showCGUModal = ref(false);
-
 const onSubmit = () => {
   handleSubmit(async (data) => {
-    // Simuler un appel API
     await new Promise(resolve => setTimeout(resolve, 1500));
-
-    // Sauvegarder dans localStorage
     addSubmission('registration', data);
-
     console.log('Données soumises:', data);
   });
 };
@@ -245,9 +266,7 @@ const onSubmit = () => {
   border: 1px solid #bbf7d0;
 }
 
-.cgu-section,
-.cgv-section,
-.policy-section {
+.legal-section {
   display: flex;
   flex-direction: column;
   gap: $spacing-sm;
@@ -256,16 +275,6 @@ const onSubmit = () => {
     flex-direction: row;
     align-items: flex-start;
     gap: $spacing-md;
-  }
-
-  .view-cgu-btn {
-    font-size: $font-size-sm;
-    width: 100%;
-
-    @include tablet {
-      width: auto;
-      margin-top: $spacing-xs;
-    }
   }
 }
 </style>

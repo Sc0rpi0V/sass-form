@@ -118,6 +118,24 @@ const router = createRouter({
       }
     },
     {
+      path: '/admin/search-panel',
+      name: 'admin-search-panel',
+      component: () => import('@/views/Admin/AdminSearchPanel.vue'),
+      meta: {
+        title: 'Gestion du panel de recherche',
+        requiresAuth: true
+      }
+    },
+    {
+      path: "/admin/newsletter",
+      name: "admin-newsletter",
+      component: () => import('@/views/Admin/AdminNewsletter.vue'),
+      meta: {
+        title: "Gestion de la newsletter",
+        requiresAuth: true
+      }
+    },
+    {
       path: '/user/login',
       name: 'user-login',
       component: () => import('@/views/Users/UserLogin.vue'),

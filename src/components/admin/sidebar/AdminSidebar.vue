@@ -67,6 +67,28 @@
             <span class="menu-label">Politique de confidentialité</span>
           </router-link>
         </li>
+        <li>
+          <router-link
+            to="/admin/search-panel"
+            class="menu-item"
+            :class="{ 'is-active': isActive('/admin/search-panel') }"
+            @click="closeSidebar"
+          >
+            <span class="menu-icon">🔍</span>
+            <span class="menu-label">Recherche</span>
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            to="/admin/newsletter"
+            class="menu-item"
+            :class="{ 'is-active': isActive('/admin/newsletter') }"
+            @click="closeSidebar"
+          >
+            <span class="menu-icon">📧</span>
+            <span class="menu-label">Newsletter</span>
+          </router-link>
+        </li>
       </ul>
 
       <div class="sidebar-footer">

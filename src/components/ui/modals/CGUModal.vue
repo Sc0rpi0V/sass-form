@@ -51,7 +51,7 @@
 
 <script setup>
 import { computed, onMounted, onUnmounted } from 'vue';
-import { useCGU } from '@/composables/cgu/useCGU';
+import { useCGU } from '@/composables/manager/useCGU';
 import BaseButton from '@/components/ui/base/BaseButton.vue';
 
 const emit = defineEmits(['close']);

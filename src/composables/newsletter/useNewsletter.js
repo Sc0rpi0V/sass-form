@@ -1,25 +1,25 @@
 import { ref, computed } from 'vue';
 import { generateUUID } from '@/utils/uuid';
 
-const STORAGE_KEY = 'cgu-versions';
+const STORAGE_KEY = 'newsletter-versions';
 
 /**
- * Composable pour gérer les versions de CGU
- * @returns {object} CGU utilities
+ * Composable pour gérer les versions de newsletter
+ * @returns {object} Newsletter utilities
  */
-export function useCGU() {
+export function useNewsletter() {
   /**
-   * Charger toutes les versions de CGU depuis localStorage
+   * Charger toutes les versions de newsletter depuis localStorage
    * @returns {object}
    */
-  const loadCGU = () => {
+  const loadNewsletter = () => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
         return JSON.parse(stored);
       }
     } catch (error) {
-      console.error('Error loading CGU:', error);
+      console.error('Error loading CGV:', error);
     }
 
     // Structure par défaut
@@ -30,40 +30,40 @@ export function useCGU() {
   };
 
   /**
-   * Sauvegarder les CGU dans localStorage
+   * Sauvegarder les versions de newsletter dans localStorage
    * @param {object} data - Données à sauvegarder
    */
-  const saveCGU = (data) => {
+  const saveNewsletter = (data) => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
     } catch (error) {
-      console.error('Error saving CGU:', error);
+      console.error('Error saving newsletter:', error);
       throw new Error('Espace de stockage insuffisant. Supprimez d\'anciennes versions.');
     }
   };
 
   /**
-   * State réactif des CGU
+   * State réactif des versions de newsletter
    */
-  const cguState = ref(loadCGU());
+  const newsletterState = ref(loadNewsletter());
 
   /**
-   * Recharger les CGU depuis le localStorage
+   * Recharger les versions de newsletter depuis le localStorage
    */
-  const refreshCGU = () => {
-    cguState.value = loadCGU();
+  const refreshNewsletter = () => {
+    newsletterState.value = loadNewsletter();
   };
 
   /**
-   * Toutes les versions de CGU
+   * Toutes les versions de newsletter
    */
-  const versions = computed(() => cguState.value.versions || []);
+  const versions = computed(() => newsletterState.value.versions || []);
 
   /**
    * Version active
    */
   const activeVersion = computed(() => {
-    const activeId = cguState.value.activeVersionId;
+    const activeId = newsletterState.value.activeVersionId;
     if (!activeId) return null;
     return versions.value.find(v => v.id === activeId) || null;
   });
@@ -83,11 +83,11 @@ export function useCGU() {
    * @returns {object} - Version créée
    */
   const addVersion = (versionData) => {
-    const data = loadCGU();
+    const data = loadNewsletter();
 
     const newVersion = {
       id: generateUUID(),
-      title: versionData.title || 'Conditions Générales d\'Utilisation',
+      title: versionData.title || 'Neswletter',
       version: versionData.version,
       content: versionData.content,
       createdAt: new Date().toISOString(),
@@ -96,10 +96,10 @@ export function useCGU() {
     };
 
     data.versions.push(newVersion);
-    saveCGU(data);
-    refreshCGU();
+    saveNewsletter(data);
+    refreshNewsletter();
 
-    console.log('CGU version added:', newVersion);
+    console.log('Newsletter version added:', newVersion);
     return newVersion;
   };
 
@@ -109,7 +109,7 @@ export function useCGU() {
    * @param {object} updates - Modifications à apporter
    */
   const updateVersion = (id, updates) => {
-    const data = loadCGU();
+    const data = loadNewsletter();
     const index = data.versions.findIndex(v => v.id === id);
 
     if (index === -1) {
@@ -123,10 +123,10 @@ export function useCGU() {
       lastModified: new Date().toISOString()
     };
 
-    saveCGU(data);
-    refreshCGU();
+    saveNewsletter(data);
+    refreshNewsletter();
 
-    console.log('CGU version updated:', data.versions[index]);
+    console.log('Newsletter version updated:', data.versions[index]);
   };
 
   /**
@@ -134,7 +134,7 @@ export function useCGU() {
    * @param {string} id - ID de la version à activer
    */
   const setActiveVersion = (id) => {
-    const data = loadCGU();
+    const data = loadNewsletter();
     const version = data.versions.find(v => v.id === id);
 
     if (!version) {
@@ -152,10 +152,10 @@ export function useCGU() {
     data.versions[index].isActive = true;
     data.activeVersionId = id;
 
-    saveCGU(data);
-    refreshCGU();
+    saveNewsletter(data);
+    refreshNewsletter();
 
-    console.log('Active CGU version set:', id);
+    console.log('Active newsletter version set:', id);
   };
 
   /**
@@ -164,7 +164,7 @@ export function useCGU() {
    * @throws {Error} Si la version est active
    */
   const deleteVersion = (id) => {
-    const data = loadCGU();
+    const data = loadNewsletter();
     const version = data.versions.find(v => v.id === id);
 
     if (!version) {
@@ -177,10 +177,10 @@ export function useCGU() {
     }
 
     data.versions = data.versions.filter(v => v.id !== id);
-    saveCGU(data);
-    refreshCGU();
+    saveNewsletter(data);
+    refreshNewsletter();
 
-    console.log('CGU version deleted:', id);
+    console.log('Newsletter version deleted:', id);
   };
 
   return {
@@ -191,6 +191,6 @@ export function useCGU() {
     updateVersion,
     setActiveVersion,
     deleteVersion,
-    refreshCGU
+    refreshNewsletter
   };
 }

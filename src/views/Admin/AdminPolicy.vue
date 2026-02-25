@@ -133,7 +133,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { usePolicy } from '@/composables/policy/usePolicy';
+import { usePolicy } from '@/composables/manager/usePolicy';
 
 import AdminSidebar from '@/components/admin/sidebar/AdminSidebar.vue';
 import PolicyList from '@/components/admin/policy/PolicyList.vue';

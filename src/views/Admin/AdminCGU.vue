@@ -133,7 +133,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { useCGU } from '@/composables/cgu/useCGU';
+import { useCGU } from '@/composables/manager/useCGU';
 
 import AdminSidebar from '@/components/admin/sidebar/AdminSidebar.vue';
 import CGUList from '@/components/admin/cgu/CGUList.vue';

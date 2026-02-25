@@ -51,7 +51,7 @@
 
 <script setup>
 import { computed, onMounted, onUnmounted } from 'vue';
-import { usePolicy } from '@/composables/policy/usePolicy';
+import { usePolicy } from '@/composables/manager/usePolicy';
 import BaseButton from '@/components/ui/base/BaseButton.vue';
 
 const emit = defineEmits(['close']);

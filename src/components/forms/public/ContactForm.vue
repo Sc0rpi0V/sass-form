@@ -140,9 +140,9 @@ import CGUModal from '@/components/ui/modals/CGUModal.vue';
 import CGVModal from '@/components/ui/modals/CGVModal.vue';
 import PolicyModal from '@/components/ui/modals/PolicyModal.vue';
 
-import { useCGV } from '@/composables/cgv/useCGV';
-import { useCGU } from '@/composables/cgu/useCGU';
-import { usePolicy } from '@/composables/policy/usePolicy';
+import { useCGV } from '@/composables/manager/useCGV';
+import { useCGU } from '@/composables/manager/useCGU';
+import { usePolicy } from '@/composables/manager/usePolicy';
 
 const { activeVersion: activeCGV } = useCGV();
 const { activeVersion: activeCGU } = useCGU();

@@ -133,7 +133,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { useCGV } from '@/composables/cgv/useCGV';
+import { useCGV } from '@/composables/manager/useCGV';
 
 import AdminSidebar from '@/components/admin/sidebar/AdminSidebar.vue';
 import CGVList from '@/components/admin/cgv/CGVList.vue';

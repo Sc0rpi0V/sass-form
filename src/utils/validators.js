@@ -11,7 +11,7 @@ export const validators = {
    */
   required: (value) => {
     // Handle different types of values
-    if (value === null || value === undefined) {
+    if (value === null || value === undefined || value === '') {
       return 'Ce champ est obligatoire';
     }
 

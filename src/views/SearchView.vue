@@ -1,11 +1,20 @@
 <template>
   <div class="view-container">
-    <SearchForm />
+    <SearchForm @search="handleSearch" />
+    <SearchResults :results="searchResults" :is-loading="isLoading" />
   </div>
 </template>
 
 <script setup>
 import SearchForm from '@/components/forms/public/SearchForm.vue';
+import SearchResults from '@/components/forms/public/SearchResults.vue';
+import { useSearchApi } from '@/composables/forms/useSearchApi';
+
+const { searchResults, isLoading, performSearch } = useSearchApi();
+
+const handleSearch = (formData) => {
+  performSearch(formData);
+};
 </script>
 
 <style scoped>

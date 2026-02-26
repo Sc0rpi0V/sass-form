@@ -1,0 +1,1935 @@
+[
+  {
+    "id": 1,
+    "nom": "T-shirt modèle 1",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 82.77,
+    "tailles_disponibles": [
+      "S",
+      "L",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Marine",
+      "Bleu",
+      "Noir",
+      "Gris"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 2,
+    "nom": "Pantalon modèle 2",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 86.95,
+    "tailles_disponibles": [
+      "XXL",
+      "S",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Rouge"
+    ],
+    "marque": "Uniqlo"
+  },
+  {
+    "id": 3,
+    "nom": "Pantalon modèle 3",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 142.03,
+    "tailles_disponibles": [
+      "XL",
+      "S",
+      "L",
+      "XS",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Gris",
+      "Blanc",
+      "Beige",
+      "Bleu"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 4,
+    "nom": "Pantalon modèle 4",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 87.69,
+    "tailles_disponibles": [
+      "L",
+      "M",
+      "XXL",
+      "S",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Blanc",
+      "Noir",
+      "Marine",
+      "Beige"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 5,
+    "nom": "Pull modèle 5",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 115.79,
+    "tailles_disponibles": [
+      "M",
+      "XXL",
+      "XL",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Bleu",
+      "Vert",
+      "Noir",
+      "Gris",
+      "Blanc"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 6,
+    "nom": "T-shirt modèle 6",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 86.28,
+    "tailles_disponibles": [
+      "XXL",
+      "M",
+      "XL",
+      "XS",
+      "S",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Bleu",
+      "Rouge",
+      "Marine"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 7,
+    "nom": "Pantalon modèle 7",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 186.51,
+    "tailles_disponibles": [
+      "M",
+      "S",
+      "XL",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Rouge",
+      "Vert",
+      "Gris"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 8,
+    "nom": "T-shirt modèle 8",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 148.12,
+    "tailles_disponibles": [
+      "M",
+      "XXL",
+      "XS",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Gris",
+      "Blanc",
+      "Beige"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 9,
+    "nom": "Chaussures modèle 9",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 121.59,
+    "tailles_disponibles": [
+      39,
+      43,
+      42,
+      40,
+      41,
+      45,
+      38
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Noir",
+      "Rouge"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 10,
+    "nom": "Pantalon modèle 10",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 52.91,
+    "tailles_disponibles": [
+      "XS",
+      "XL",
+      "S",
+      "XXL",
+      "M",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Beige",
+      "Marine",
+      "Rouge",
+      "Bleu"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 11,
+    "nom": "Pantalon modèle 11",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 39.85,
+    "tailles_disponibles": [
+      "XL",
+      "M",
+      "XS",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Vert",
+      "Noir"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 12,
+    "nom": "Pull modèle 12",
+    "description_courte": "Confort optimal pour un usage quotidien.",
+    "prix": 150.65,
+    "tailles_disponibles": [
+      "S",
+      "M",
+      "XS",
+      "L",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Marine",
+      "Vert",
+      "Rouge",
+      "Gris",
+      "Blanc"
+    ],
+    "marque": "H&M"
+  },
+  {
+    "id": 13,
+    "nom": "Chaussures modèle 13",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 126.72,
+    "tailles_disponibles": [
+      42,
+      40,
+      43,
+      45,
+      41
+    ],
+    "couleurs_disponibles": [
+      "Marine",
+      "Noir",
+      "Gris",
+      "Blanc",
+      "Vert"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 14,
+    "nom": "Pantalon modèle 14",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 59.18,
+    "tailles_disponibles": [
+      "XXL",
+      "XS",
+      "S",
+      "L",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Bleu",
+      "Blanc"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 15,
+    "nom": "Chaussures modèle 15",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 78.33,
+    "tailles_disponibles": [
+      43,
+      38,
+      42,
+      44,
+      41,
+      45,
+      40
+    ],
+    "couleurs_disponibles": [
+      "Blanc",
+      "Beige",
+      "Noir",
+      "Vert",
+      "Marine"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 16,
+    "nom": "Pantalon modèle 16",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 170.41,
+    "tailles_disponibles": [
+      "XS",
+      "S",
+      "M",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Bleu",
+      "Gris"
+    ],
+    "marque": "Levi's"
+  },
+  {
+    "id": 17,
+    "nom": "Chaussures modèle 17",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 117.67,
+    "tailles_disponibles": [
+      44,
+      38,
+      39,
+      41
+    ],
+    "couleurs_disponibles": [
+      "Marine",
+      "Gris"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 18,
+    "nom": "T-shirt modèle 18",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 96.36,
+    "tailles_disponibles": [
+      "L",
+      "XL",
+      "XXL",
+      "S",
+      "XS",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Rouge",
+      "Marine"
+    ],
+    "marque": "Levi's"
+  },
+  {
+    "id": 19,
+    "nom": "Pull modèle 19",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 29.83,
+    "tailles_disponibles": [
+      "S",
+      "XL",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Vert",
+      "Marine",
+      "Blanc",
+      "Gris"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 20,
+    "nom": "Pull modèle 20",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 136.91,
+    "tailles_disponibles": [
+      "L",
+      "S",
+      "XS",
+      "XL",
+      "M",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Gris",
+      "Bleu"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 21,
+    "nom": "T-shirt modèle 21",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 86.95,
+    "tailles_disponibles": [
+      "L",
+      "XXL",
+      "XS",
+      "XL",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Rouge",
+      "Gris"
+    ],
+    "marque": "H&M"
+  },
+  {
+    "id": 22,
+    "nom": "Chaussures modèle 22",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 117.27,
+    "tailles_disponibles": [
+      42,
+      38,
+      41,
+      43
+    ],
+    "couleurs_disponibles": [
+      "Marine",
+      "Beige",
+      "Noir",
+      "Gris",
+      "Bleu"
+    ],
+    "marque": "Uniqlo"
+  },
+  {
+    "id": 23,
+    "nom": "Pantalon modèle 23",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 175.69,
+    "tailles_disponibles": [
+      "L",
+      "S",
+      "XS",
+      "M",
+      "XL",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Beige",
+      "Marine",
+      "Gris"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 24,
+    "nom": "Chaussures modèle 24",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 153.26,
+    "tailles_disponibles": [
+      38,
+      41,
+      45,
+      39
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Blanc",
+      "Beige",
+      "Marine"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 25,
+    "nom": "T-shirt modèle 25",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 141.86,
+    "tailles_disponibles": [
+      "M",
+      "XS",
+      "L",
+      "XXL",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Bleu",
+      "Rouge",
+      "Gris"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 26,
+    "nom": "Pantalon modèle 26",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 85.51,
+    "tailles_disponibles": [
+      "M",
+      "S",
+      "XL",
+      "XXL",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Rouge"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 27,
+    "nom": "Pull modèle 27",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 45.19,
+    "tailles_disponibles": [
+      "XS",
+      "S",
+      "XXL",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Vert",
+      "Rouge",
+      "Bleu",
+      "Blanc"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 28,
+    "nom": "Pantalon modèle 28",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 43.55,
+    "tailles_disponibles": [
+      "M",
+      "L",
+      "XXL",
+      "XS",
+      "S",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Blanc",
+      "Rouge",
+      "Bleu"
+    ],
+    "marque": "H&M"
+  },
+  {
+    "id": 29,
+    "nom": "Pull modèle 29",
+    "description_courte": "Confort optimal pour un usage quotidien.",
+    "prix": 31.01,
+    "tailles_disponibles": [
+      "XXL",
+      "M",
+      "S",
+      "L",
+      "XS",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Beige",
+      "Marine",
+      "Bleu",
+      "Rouge"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 30,
+    "nom": "Pantalon modèle 30",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 149.15,
+    "tailles_disponibles": [
+      "M",
+      "XL",
+      "XS",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Gris",
+      "Marine"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 31,
+    "nom": "T-shirt modèle 31",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 45.29,
+    "tailles_disponibles": [
+      "XL",
+      "L",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Blanc",
+      "Rouge"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 32,
+    "nom": "T-shirt modèle 32",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 116.77,
+    "tailles_disponibles": [
+      "XXL",
+      "M",
+      "XL",
+      "S",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Gris"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 33,
+    "nom": "T-shirt modèle 33",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 94.52,
+    "tailles_disponibles": [
+      "XS",
+      "M",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Rouge",
+      "Blanc",
+      "Vert"
+    ],
+    "marque": "Levi's"
+  },
+  {
+    "id": 34,
+    "nom": "Pantalon modèle 34",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 94.81,
+    "tailles_disponibles": [
+      "XXL",
+      "L",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Noir",
+      "Gris"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 35,
+    "nom": "T-shirt modèle 35",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 34.99,
+    "tailles_disponibles": [
+      "XXL",
+      "L",
+      "XL",
+      "S",
+      "M",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Blanc"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 36,
+    "nom": "Chaussures modèle 36",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 23.14,
+    "tailles_disponibles": [
+      39,
+      45,
+      40,
+      43,
+      41
+    ],
+    "couleurs_disponibles": [
+      "Marine",
+      "Rouge",
+      "Noir",
+      "Gris"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 37,
+    "nom": "T-shirt modèle 37",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 88.54,
+    "tailles_disponibles": [
+      "XL",
+      "XS",
+      "S",
+      "M",
+      "XXL",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Vert",
+      "Rouge",
+      "Marine"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 38,
+    "nom": "T-shirt modèle 38",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 59.48,
+    "tailles_disponibles": [
+      "M",
+      "XXL",
+      "XL",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Marine",
+      "Blanc",
+      "Rouge"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 39,
+    "nom": "Pull modèle 39",
+    "description_courte": "Confort optimal pour un usage quotidien.",
+    "prix": 56.51,
+    "tailles_disponibles": [
+      "XL",
+      "L",
+      "XS",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Gris",
+      "Rouge",
+      "Blanc"
+    ],
+    "marque": "H&M"
+  },
+  {
+    "id": 40,
+    "nom": "T-shirt modèle 40",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 178.48,
+    "tailles_disponibles": [
+      "XL",
+      "XS",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Rouge",
+      "Gris",
+      "Blanc",
+      "Noir"
+    ],
+    "marque": "Uniqlo"
+  },
+  {
+    "id": 41,
+    "nom": "Chaussures modèle 41",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 101.7,
+    "tailles_disponibles": [
+      43,
+      41,
+      45,
+      42,
+      40
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Gris",
+      "Blanc",
+      "Rouge",
+      "Marine"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 42,
+    "nom": "Chaussures modèle 42",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 25.23,
+    "tailles_disponibles": [
+      40,
+      41,
+      39,
+      43,
+      44,
+      38
+    ],
+    "couleurs_disponibles": [
+      "Rouge",
+      "Bleu"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 43,
+    "nom": "T-shirt modèle 43",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 126.84,
+    "tailles_disponibles": [
+      "S",
+      "L",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Rouge",
+      "Blanc",
+      "Noir",
+      "Gris",
+      "Bleu"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 44,
+    "nom": "Chaussures modèle 44",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 92.04,
+    "tailles_disponibles": [
+      41,
+      39,
+      40,
+      43,
+      42,
+      44
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Vert",
+      "Blanc",
+      "Rouge"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 45,
+    "nom": "Pantalon modèle 45",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 55.22,
+    "tailles_disponibles": [
+      "L",
+      "M",
+      "XXL",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Bleu",
+      "Beige"
+    ],
+    "marque": "Levi's"
+  },
+  {
+    "id": 46,
+    "nom": "Pull modèle 46",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 152.56,
+    "tailles_disponibles": [
+      "M",
+      "XXL",
+      "L",
+      "XS",
+      "S",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Blanc",
+      "Marine"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 47,
+    "nom": "Pantalon modèle 47",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 170.8,
+    "tailles_disponibles": [
+      "S",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Blanc",
+      "Vert"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 48,
+    "nom": "Pantalon modèle 48",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 59.46,
+    "tailles_disponibles": [
+      "L",
+      "XL",
+      "XS",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Rouge",
+      "Blanc",
+      "Bleu",
+      "Noir",
+      "Beige"
+    ],
+    "marque": "H&M"
+  },
+  {
+    "id": 49,
+    "nom": "Pantalon modèle 49",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 142.84,
+    "tailles_disponibles": [
+      "L",
+      "XL",
+      "M",
+      "S",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Bleu",
+      "Gris"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 50,
+    "nom": "Pantalon modèle 50",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 148.98,
+    "tailles_disponibles": [
+      "XS",
+      "XL",
+      "S",
+      "M",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Blanc",
+      "Bleu"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 51,
+    "nom": "Chaussures modèle 51",
+    "description_courte": "Confort optimal pour un usage quotidien.",
+    "prix": 77.11,
+    "tailles_disponibles": [
+      38,
+      42,
+      41,
+      45,
+      44,
+      40
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Rouge",
+      "Blanc",
+      "Vert",
+      "Gris"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 52,
+    "nom": "Pantalon modèle 52",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 114.45,
+    "tailles_disponibles": [
+      "M",
+      "XXL",
+      "XS",
+      "L",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Marine",
+      "Blanc",
+      "Noir",
+      "Bleu"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 53,
+    "nom": "T-shirt modèle 53",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 176.96,
+    "tailles_disponibles": [
+      "XL",
+      "M",
+      "S",
+      "XXL",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Marine",
+      "Blanc",
+      "Bleu"
+    ],
+    "marque": "Levi's"
+  },
+  {
+    "id": 54,
+    "nom": "Chaussures modèle 54",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 95.09,
+    "tailles_disponibles": [
+      40,
+      42,
+      41,
+      45
+    ],
+    "couleurs_disponibles": [
+      "Bleu",
+      "Marine",
+      "Noir",
+      "Blanc",
+      "Rouge"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 55,
+    "nom": "T-shirt modèle 55",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 137.05,
+    "tailles_disponibles": [
+      "XS",
+      "XXL",
+      "XL",
+      "M",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Marine",
+      "Bleu",
+      "Noir",
+      "Blanc"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 56,
+    "nom": "Chaussures modèle 56",
+    "description_courte": "Confort optimal pour un usage quotidien.",
+    "prix": 173.75,
+    "tailles_disponibles": [
+      42,
+      44,
+      39,
+      38,
+      40,
+      45,
+      43
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Gris",
+      "Bleu",
+      "Rouge",
+      "Blanc"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 57,
+    "nom": "Pull modèle 57",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 177.79,
+    "tailles_disponibles": [
+      "XL",
+      "L",
+      "M",
+      "S",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Blanc",
+      "Rouge",
+      "Noir",
+      "Bleu"
+    ],
+    "marque": "Uniqlo"
+  },
+  {
+    "id": 58,
+    "nom": "Pantalon modèle 58",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 65.37,
+    "tailles_disponibles": [
+      "S",
+      "XXL",
+      "XS",
+      "M",
+      "L",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Rouge",
+      "Vert",
+      "Gris"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 59,
+    "nom": "T-shirt modèle 59",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 147.82,
+    "tailles_disponibles": [
+      "S",
+      "M",
+      "XS",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Rouge",
+      "Blanc",
+      "Bleu"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 60,
+    "nom": "Pull modèle 60",
+    "description_courte": "Confort optimal pour un usage quotidien.",
+    "prix": 138.18,
+    "tailles_disponibles": [
+      "XXL",
+      "S",
+      "XS",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Marine",
+      "Vert"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 61,
+    "nom": "Pull modèle 61",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 50.8,
+    "tailles_disponibles": [
+      "L",
+      "M",
+      "XL",
+      "XXL",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Vert",
+      "Gris",
+      "Marine"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 62,
+    "nom": "Pantalon modèle 62",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 28.99,
+    "tailles_disponibles": [
+      "XS",
+      "XXL",
+      "L",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Bleu",
+      "Blanc",
+      "Rouge",
+      "Gris"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 63,
+    "nom": "Pull modèle 63",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 61.59,
+    "tailles_disponibles": [
+      "XXL",
+      "M",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Bleu",
+      "Vert"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 64,
+    "nom": "T-shirt modèle 64",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 80.94,
+    "tailles_disponibles": [
+      "XXL",
+      "M",
+      "L",
+      "XL",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Bleu",
+      "Rouge",
+      "Vert",
+      "Beige"
+    ],
+    "marque": "H&M"
+  },
+  {
+    "id": 65,
+    "nom": "Pull modèle 65",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 105.32,
+    "tailles_disponibles": [
+      "S",
+      "L",
+      "M",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Rouge",
+      "Vert",
+      "Blanc"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 66,
+    "nom": "T-shirt modèle 66",
+    "description_courte": "Confort optimal pour un usage quotidien.",
+    "prix": 58.71,
+    "tailles_disponibles": [
+      "XL",
+      "S",
+      "XXL",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Noir",
+      "Rouge"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 67,
+    "nom": "Chaussures modèle 67",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 105.77,
+    "tailles_disponibles": [
+      43,
+      40,
+      41,
+      39,
+      45,
+      44
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Vert",
+      "Rouge",
+      "Bleu",
+      "Marine"
+    ],
+    "marque": "H&M"
+  },
+  {
+    "id": 68,
+    "nom": "T-shirt modèle 68",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 24.68,
+    "tailles_disponibles": [
+      "XXL",
+      "M",
+      "XS",
+      "L",
+      "XL"
+    ],
+    "couleurs_disponibles": [
+      "Marine",
+      "Noir",
+      "Gris",
+      "Blanc"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 69,
+    "nom": "T-shirt modèle 69",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 126.15,
+    "tailles_disponibles": [
+      "XL",
+      "XXL",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Gris",
+      "Blanc",
+      "Bleu",
+      "Beige"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 70,
+    "nom": "T-shirt modèle 70",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 105.09,
+    "tailles_disponibles": [
+      "XL",
+      "M",
+      "L",
+      "S",
+      "XS",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Marine",
+      "Noir",
+      "Vert"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 71,
+    "nom": "Chaussures modèle 71",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 85.59,
+    "tailles_disponibles": [
+      40,
+      43,
+      38,
+      45,
+      39,
+      42
+    ],
+    "couleurs_disponibles": [
+      "Marine",
+      "Bleu",
+      "Blanc",
+      "Rouge"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 72,
+    "nom": "Pull modèle 72",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 162.08,
+    "tailles_disponibles": [
+      "XS",
+      "XL",
+      "L",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Rouge",
+      "Beige",
+      "Bleu"
+    ],
+    "marque": "H&M"
+  },
+  {
+    "id": 73,
+    "nom": "Chaussures modèle 73",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 111.92,
+    "tailles_disponibles": [
+      38,
+      44,
+      39,
+      40,
+      43
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Noir"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 74,
+    "nom": "T-shirt modèle 74",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 141.67,
+    "tailles_disponibles": [
+      "L",
+      "XL",
+      "XXL",
+      "S",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Blanc",
+      "Marine"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 75,
+    "nom": "Pantalon modèle 75",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 85.92,
+    "tailles_disponibles": [
+      "L",
+      "XXL",
+      "XL",
+      "M",
+      "XS",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Noir",
+      "Rouge"
+    ],
+    "marque": "Levi's"
+  },
+  {
+    "id": 76,
+    "nom": "T-shirt modèle 76",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 132.87,
+    "tailles_disponibles": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Noir"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 77,
+    "nom": "Pantalon modèle 77",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 180.84,
+    "tailles_disponibles": [
+      "S",
+      "XL",
+      "L",
+      "M",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Rouge",
+      "Marine",
+      "Bleu",
+      "Gris"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 78,
+    "nom": "T-shirt modèle 78",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 170.3,
+    "tailles_disponibles": [
+      "XS",
+      "XL",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Rouge",
+      "Gris"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 79,
+    "nom": "T-shirt modèle 79",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 100.6,
+    "tailles_disponibles": [
+      "XL",
+      "XS",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Vert",
+      "Blanc"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 80,
+    "nom": "Chaussures modèle 80",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 39.89,
+    "tailles_disponibles": [
+      43,
+      44,
+      45,
+      39
+    ],
+    "couleurs_disponibles": [
+      "Blanc",
+      "Marine",
+      "Noir"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 81,
+    "nom": "T-shirt modèle 81",
+    "description_courte": "Confort optimal pour un usage quotidien.",
+    "prix": 35.79,
+    "tailles_disponibles": [
+      "XXL",
+      "L",
+      "S",
+      "M",
+      "XL",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Marine",
+      "Noir"
+    ],
+    "marque": "Zara"
+  },
+  {
+    "id": 82,
+    "nom": "T-shirt modèle 82",
+    "description_courte": "Confort optimal pour un usage quotidien.",
+    "prix": 38.93,
+    "tailles_disponibles": [
+      "XXL",
+      "S",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Marine"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 83,
+    "nom": "T-shirt modèle 83",
+    "description_courte": "Conçu pour un maximum de confort.",
+    "prix": 155.68,
+    "tailles_disponibles": [
+      "XL",
+      "S",
+      "XS",
+      "XXL",
+      "L",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Vert",
+      "Rouge",
+      "Noir"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 84,
+    "nom": "Chaussures modèle 84",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 55.8,
+    "tailles_disponibles": [
+      40,
+      45,
+      44,
+      41
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Blanc",
+      "Rouge",
+      "Vert"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 85,
+    "nom": "Pantalon modèle 85",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 66.31,
+    "tailles_disponibles": [
+      "L",
+      "XL",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Marine",
+      "Rouge"
+    ],
+    "marque": "Levi's"
+  },
+  {
+    "id": 86,
+    "nom": "T-shirt modèle 86",
+    "description_courte": "Parfait pour toutes les saisons.",
+    "prix": 160.32,
+    "tailles_disponibles": [
+      "M",
+      "L",
+      "XS",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Blanc"
+    ],
+    "marque": "Uniqlo"
+  },
+  {
+    "id": 87,
+    "nom": "Pull modèle 87",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 113.62,
+    "tailles_disponibles": [
+      "XS",
+      "XXL",
+      "XL",
+      "M",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Noir",
+      "Gris",
+      "Vert",
+      "Marine"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 88,
+    "nom": "T-shirt modèle 88",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 76.18,
+    "tailles_disponibles": [
+      "XS",
+      "M",
+      "XL",
+      "XXL",
+      "L",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Rouge",
+      "Bleu",
+      "Beige"
+    ],
+    "marque": "H&M"
+  },
+  {
+    "id": 89,
+    "nom": "Chaussures modèle 89",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 67.24,
+    "tailles_disponibles": [
+      41,
+      45,
+      38,
+      43,
+      42
+    ],
+    "couleurs_disponibles": [
+      "Vert",
+      "Marine",
+      "Noir"
+    ],
+    "marque": "Levi's"
+  },
+  {
+    "id": 90,
+    "nom": "T-shirt modèle 90",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 118.44,
+    "tailles_disponibles": [
+      "XS",
+      "XXL",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Beige",
+      "Blanc",
+      "Noir",
+      "Gris"
+    ],
+    "marque": "Uniqlo"
+  },
+  {
+    "id": 91,
+    "nom": "Pantalon modèle 91",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 31.79,
+    "tailles_disponibles": [
+      "XL",
+      "XXL",
+      "XS",
+      "L",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Rouge",
+      "Marine",
+      "Bleu",
+      "Beige"
+    ],
+    "marque": "Uniqlo"
+  },
+  {
+    "id": 92,
+    "nom": "Pantalon modèle 92",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 109.04,
+    "tailles_disponibles": [
+      "L",
+      "XL",
+      "XS",
+      "M",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Bleu"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 93,
+    "nom": "Chaussures modèle 93",
+    "description_courte": "Idéal pour un style décontracté.",
+    "prix": 183.53,
+    "tailles_disponibles": [
+      40,
+      44,
+      41,
+      38,
+      45,
+      43
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Beige"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 94,
+    "nom": "Pull modèle 94",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 89.5,
+    "tailles_disponibles": [
+      "L",
+      "XXL",
+      "XS"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Blanc",
+      "Bleu",
+      "Rouge"
+    ],
+    "marque": "Adidas"
+  },
+  {
+    "id": 95,
+    "nom": "T-shirt modèle 95",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 187.0,
+    "tailles_disponibles": [
+      "M",
+      "L",
+      "XL",
+      "S"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Vert",
+      "Noir",
+      "Marine",
+      "Bleu"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 96,
+    "nom": "Chaussures modèle 96",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 86.06,
+    "tailles_disponibles": [
+      43,
+      44,
+      45,
+      41,
+      39
+    ],
+    "couleurs_disponibles": [
+      "Bleu",
+      "Marine",
+      "Gris"
+    ],
+    "marque": "Nike"
+  },
+  {
+    "id": 97,
+    "nom": "Chaussures modèle 97",
+    "description_courte": "Coupe ergonomique et finition premium.",
+    "prix": 132.3,
+    "tailles_disponibles": [
+      41,
+      45,
+      44,
+      38,
+      42
+    ],
+    "couleurs_disponibles": [
+      "Blanc",
+      "Bleu",
+      "Beige",
+      "Vert"
+    ],
+    "marque": "Levi's"
+  },
+  {
+    "id": 98,
+    "nom": "T-shirt modèle 98",
+    "description_courte": "Style intemporel et polyvalent.",
+    "prix": 42.57,
+    "tailles_disponibles": [
+      "M",
+      "XS",
+      "S",
+      "L"
+    ],
+    "couleurs_disponibles": [
+      "Noir",
+      "Beige",
+      "Gris"
+    ],
+    "marque": "Puma"
+  },
+  {
+    "id": 99,
+    "nom": "Pantalon modèle 99",
+    "description_courte": "Produit durable et agréable à porter.",
+    "prix": 95.6,
+    "tailles_disponibles": [
+      "L",
+      "XXL",
+      "M"
+    ],
+    "couleurs_disponibles": [
+      "Gris",
+      "Rouge",
+      "Bleu",
+      "Vert",
+      "Blanc"
+    ],
+    "marque": "Decathlon"
+  },
+  {
+    "id": 100,
+    "nom": "Pantalon modèle 100",
+    "description_courte": "Design moderne et matière de qualité.",
+    "prix": 119.74,
+    "tailles_disponibles": [
+      "XL",
+      "S",
+      "L",
+      "XS",
+      "M",
+      "XXL"
+    ],
+    "couleurs_disponibles": [
+      "Blanc",
+      "Beige",
+      "Noir",
+      "Vert",
+      "Bleu"
+    ],
+    "marque": "Uniqlo"
+  }
+]

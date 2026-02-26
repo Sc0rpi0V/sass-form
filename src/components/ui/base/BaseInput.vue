@@ -34,7 +34,7 @@ defineProps({
   type: {
     type: String,
     default: 'text',
-    validator: (value) => ['text', 'email', 'password', 'tel', 'url', 'number'].includes(value)
+    validator: (value) => ['text', 'email', 'password', 'tel', 'url', 'number', 'date'].includes(value)
   },
   modelValue: {
     type: [String, Number],

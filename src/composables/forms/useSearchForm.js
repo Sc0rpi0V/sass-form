@@ -1,31 +1,29 @@
-import { reactive } from 'vue';
+import { useForm } from '@/composables/forms/useForm';
+import { validators } from '@/utils/validators';
 
 export function useSearchForm() {
-  const formData = reactive({
+
+  const initialValues = {
     search: '',
-    category: null,
+    category: '',
     tags: [],
     priceMin: null,
     priceMax: null,
     date: null,
-    orderBy: 'date'
-  });
-
-  const handleInput = (field, value) => {
-    formData[field] = value;
+    orderBy: null,
+    size: null,
+    color: null,
+    author: null,
+    dateCreation: null
   };
 
-  const resetForm = () => {
-    Object.keys(formData).forEach(key => {
-      formData[key] = Array.isArray(formData[key]) ? [] : null;
-    });
-    formData.search = '';
-    formData.orderBy = 'date';
+  const validationRules = {
+    category: [validators.required]
   };
+
+  const form = useForm(initialValues, validationRules);
 
   return {
-    formData,
-    handleInput,
-    resetForm
+    ...form
   };
 }

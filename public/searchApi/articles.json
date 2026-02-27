@@ -1,802 +1,802 @@
 [
   {
     "id": 1,
-    "titre": "Comment améliorer les performances de votre site",
-    "excerpt": "Explorez les solutions modernes pour développer plus efficacement.",
+    "titre": "Analyse approfondie de cloud computing",
+    "excerpt": "Vision experte orientée résultats mesurables.",
     "auteur": "Julien Moreau",
-    "date_creation": "2022-06-26T00:00:00",
-    "date_modification": "2022-08-09T00:00:00"
+    "date_creation": "2023-02-13",
+    "date_modification": "2023-03-06"
   },
   {
     "id": 2,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2024-11-20T00:00:00",
-    "date_modification": "2025-02-04T00:00:00"
+    "titre": "Techniques professionnelles de UX design",
+    "excerpt": "Optimisation concrète des processus numériques.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2025-10-27",
+    "date_modification": "2026-02-08"
   },
   {
     "id": 3,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
-    "auteur": "Camille Robert",
-    "date_creation": "2024-01-16T00:00:00",
-    "date_modification": "2024-04-24T00:00:00"
+    "titre": "Mise en œuvre concrète de cloud computing",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Chloé Michel",
+    "date_creation": "2022-01-06",
+    "date_modification": "2022-04-08"
   },
   {
     "id": 4,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Chloé Michel",
-    "date_creation": "2023-03-19T00:00:00",
-    "date_modification": "2023-06-30T00:00:00"
+    "titre": "Techniques professionnelles de intégration continue",
+    "excerpt": "Optimisation concrète des processus numériques.",
+    "auteur": "Nathan Simon",
+    "date_creation": "2022-07-21",
+    "date_modification": "2022-09-21"
   },
   {
     "id": 5,
-    "titre": "Comment améliorer les performances de votre site",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
-    "auteur": "Camille Robert",
-    "date_creation": "2023-12-07T00:00:00",
-    "date_modification": "2024-02-17T00:00:00"
+    "titre": "Méthodologie complète de headless CMS",
+    "excerpt": "Perspective professionnelle basée sur des cas réels.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2022-09-12",
+    "date_modification": "2022-09-28"
   },
   {
     "id": 6,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Nathan Simon",
-    "date_creation": "2025-05-16T00:00:00",
-    "date_modification": "2025-06-25T00:00:00"
+    "titre": "Approche stratégique de backend haute performance",
+    "excerpt": "Vision experte orientée résultats mesurables.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2023-06-15",
+    "date_modification": "2023-06-26"
   },
   {
     "id": 7,
-    "titre": "Optimiser l'expérience utilisateur",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
+    "titre": "Techniques professionnelles de intégration continue",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
     "auteur": "Chloé Michel",
-    "date_creation": "2022-06-12T00:00:00",
-    "date_modification": "2022-07-29T00:00:00"
+    "date_creation": "2025-08-28",
+    "date_modification": "2025-11-23"
   },
   {
     "id": 8,
-    "titre": "Introduction aux architectures modernes",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
-    "auteur": "Emma Laurent",
-    "date_creation": "2022-05-29T00:00:00",
-    "date_modification": "2022-08-15T00:00:00"
+    "titre": "Méthodologie complète de headless CMS",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Chloé Michel",
+    "date_creation": "2022-11-24",
+    "date_modification": "2023-02-15"
   },
   {
     "id": 9,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
+    "titre": "Guide avancé de progressive web apps",
+    "excerpt": "Optimisation concrète des processus numériques.",
     "auteur": "Julien Moreau",
-    "date_creation": "2022-07-23T00:00:00",
-    "date_modification": "2022-09-25T00:00:00"
+    "date_creation": "2025-09-15",
+    "date_modification": "2026-01-01"
   },
   {
     "id": 10,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2025-06-22T00:00:00",
-    "date_modification": "2025-09-30T00:00:00"
+    "titre": "Mise en œuvre concrète de UX design",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Lucas Martin",
+    "date_creation": "2024-12-03",
+    "date_modification": "2024-12-22"
   },
   {
     "id": 11,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
-    "auteur": "Julien Moreau",
-    "date_creation": "2024-03-03T00:00:00",
-    "date_modification": "2024-05-26T00:00:00"
+    "titre": "Étude pratique de headless CMS",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Emma Laurent",
+    "date_creation": "2023-12-21",
+    "date_modification": "2024-01-03"
   },
   {
     "id": 12,
-    "titre": "Comment améliorer les performances de votre site",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
-    "auteur": "Julien Moreau",
-    "date_creation": "2022-02-18T00:00:00",
-    "date_modification": "2022-03-20T00:00:00"
+    "titre": "Bonnes pratiques essentielles de progressive web apps",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
+    "auteur": "Marie Dubois",
+    "date_creation": "2024-06-19",
+    "date_modification": "2024-07-20"
   },
   {
     "id": 13,
-    "titre": "Introduction aux architectures modernes",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Hugo Garcia",
-    "date_creation": "2023-04-16T00:00:00",
-    "date_modification": "2023-08-09T00:00:00"
+    "titre": "Guide avancé de cloud computing",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2023-03-20",
+    "date_modification": "2023-03-25"
   },
   {
     "id": 14,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
-    "auteur": "Nathan Simon",
-    "date_creation": "2024-10-13T00:00:00",
-    "date_modification": "2024-12-26T00:00:00"
+    "titre": "Techniques professionnelles de frameworks JavaScript",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2024-07-07",
+    "date_modification": "2024-09-15"
   },
   {
     "id": 15,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Hugo Garcia",
-    "date_creation": "2023-03-18T00:00:00",
-    "date_modification": "2023-04-27T00:00:00"
+    "titre": "Approche stratégique de sécurité applicative",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Lucas Martin",
+    "date_creation": "2022-07-22",
+    "date_modification": "2022-08-12"
   },
   {
     "id": 16,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2023-09-22T00:00:00",
-    "date_modification": "2023-11-03T00:00:00"
+    "titre": "Mise en œuvre concrète de backend haute performance",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
+    "auteur": "Emma Laurent",
+    "date_creation": "2022-11-07",
+    "date_modification": "2023-01-25"
   },
   {
     "id": 17,
-    "titre": "Optimiser l'expérience utilisateur",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
+    "titre": "Méthodologie complète de headless CMS",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
     "auteur": "Emma Laurent",
-    "date_creation": "2024-07-16T00:00:00",
-    "date_modification": "2024-09-07T00:00:00"
+    "date_creation": "2025-08-31",
+    "date_modification": "2025-10-31"
   },
   {
     "id": 18,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
+    "titre": "Méthodologie complète de frameworks JavaScript",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
     "auteur": "Nathan Simon",
-    "date_creation": "2024-01-11T00:00:00",
-    "date_modification": "2024-03-29T00:00:00"
+    "date_creation": "2025-01-30",
+    "date_modification": "2025-02-09"
   },
   {
     "id": 19,
-    "titre": "Bonnes pratiques de développement",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
-    "auteur": "Julien Moreau",
-    "date_creation": "2022-10-30T00:00:00",
-    "date_modification": "2022-10-30T00:00:00"
+    "titre": "Bonnes pratiques essentielles de SEO technique",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Lucas Martin",
+    "date_creation": "2023-03-18",
+    "date_modification": "2023-04-23"
   },
   {
     "id": 20,
-    "titre": "Optimiser l'expérience utilisateur",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
+    "titre": "Techniques professionnelles de progressive web apps",
+    "excerpt": "Décryptage technique pour développeurs exigeants.",
     "auteur": "Camille Robert",
-    "date_creation": "2024-03-03T00:00:00",
-    "date_modification": "2024-04-13T00:00:00"
+    "date_creation": "2023-12-06",
+    "date_modification": "2024-04-04"
   },
   {
     "id": 21,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Les meilleures pratiques pour concevoir des interfaces efficaces.",
-    "auteur": "Camille Robert",
-    "date_creation": "2022-01-15T00:00:00",
-    "date_modification": "2022-04-04T00:00:00"
+    "titre": "Méthodologie complète de scalabilité",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Lucas Martin",
+    "date_creation": "2024-03-12",
+    "date_modification": "2024-06-14"
   },
   {
     "id": 22,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Explorez les solutions modernes pour développer plus efficacement.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2024-03-22T00:00:00",
-    "date_modification": "2024-04-12T00:00:00"
+    "titre": "Méthodologie complète de composants réutilisables",
+    "excerpt": "Analyse détaillée des mécanismes et stratégies modernes.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2022-06-18",
+    "date_modification": "2022-08-08"
   },
   {
     "id": 23,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2024-11-13T00:00:00",
-    "date_modification": "2024-11-22T00:00:00"
+    "titre": "Étude pratique de microservices",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Chloé Michel",
+    "date_creation": "2024-03-13",
+    "date_modification": "2024-06-30"
   },
   {
     "id": 24,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
-    "auteur": "Chloé Michel",
-    "date_creation": "2023-07-16T00:00:00",
-    "date_modification": "2023-08-09T00:00:00"
+    "titre": "Bonnes pratiques essentielles de UX design",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2023-10-21",
+    "date_modification": "2023-11-06"
   },
   {
     "id": 25,
-    "titre": "Comment améliorer les performances de votre site",
-    "excerpt": "Apprenez à structurer vos projets de manière professionnelle.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2022-05-09T00:00:00",
-    "date_modification": "2022-08-26T00:00:00"
+    "titre": "Guide avancé de headless CMS",
+    "excerpt": "Vision experte orientée résultats mesurables.",
+    "auteur": "Marie Dubois",
+    "date_creation": "2022-11-18",
+    "date_modification": "2023-01-31"
   },
   {
     "id": 26,
-    "titre": "Optimiser l'expérience utilisateur",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
-    "auteur": "Thomas Petit",
-    "date_creation": "2024-06-27T00:00:00",
-    "date_modification": "2024-08-06T00:00:00"
+    "titre": "Approche stratégique de performance web",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2025-02-08",
+    "date_modification": "2025-05-07"
   },
   {
     "id": 27,
-    "titre": "Comment améliorer les performances de votre site",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Camille Robert",
-    "date_creation": "2025-05-14T00:00:00",
-    "date_modification": "2025-06-09T00:00:00"
+    "titre": "Étude pratique de scalabilité",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Emma Laurent",
+    "date_creation": "2022-12-08",
+    "date_modification": "2022-12-12"
   },
   {
     "id": 28,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
-    "auteur": "Chloé Michel",
-    "date_creation": "2022-11-14T00:00:00",
-    "date_modification": "2022-11-30T00:00:00"
+    "titre": "Vision moderne de cloud computing",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Camille Robert",
+    "date_creation": "2022-11-01",
+    "date_modification": "2022-12-04"
   },
   {
     "id": 29,
-    "titre": "Introduction aux architectures modernes",
-    "excerpt": "Des conseils concrets pour optimiser votre workflow.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2025-04-06T00:00:00",
-    "date_modification": "2025-07-23T00:00:00"
+    "titre": "Bonnes pratiques essentielles de composants réutilisables",
+    "excerpt": "Approche systémique et scalable.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2023-12-12",
+    "date_modification": "2024-02-02"
   },
   {
     "id": 30,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Camille Robert",
-    "date_creation": "2025-08-04T00:00:00",
-    "date_modification": "2025-08-26T00:00:00"
+    "titre": "Techniques professionnelles de progressive web apps",
+    "excerpt": "Perspective professionnelle basée sur des cas réels.",
+    "auteur": "Marie Dubois",
+    "date_creation": "2023-02-01",
+    "date_modification": "2023-04-13"
   },
   {
     "id": 31,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
-    "auteur": "Julien Moreau",
-    "date_creation": "2025-05-15T00:00:00",
-    "date_modification": "2025-07-17T00:00:00"
+    "titre": "Analyse approfondie de design systems",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2025-06-21",
+    "date_modification": "2025-06-29"
   },
   {
     "id": 32,
-    "titre": "Bonnes pratiques de développement",
-    "excerpt": "Apprenez à structurer vos projets de manière professionnelle.",
-    "auteur": "Nathan Simon",
-    "date_creation": "2024-10-05T00:00:00",
-    "date_modification": "2024-11-20T00:00:00"
+    "titre": "Guide avancé de backend haute performance",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Marie Dubois",
+    "date_creation": "2023-12-01",
+    "date_modification": "2024-01-23"
   },
   {
     "id": 33,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
-    "auteur": "Camille Robert",
-    "date_creation": "2023-11-21T00:00:00",
-    "date_modification": "2024-02-24T00:00:00"
+    "titre": "Guide avancé de SEO technique",
+    "excerpt": "Approche systémique et scalable.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2025-07-12",
+    "date_modification": "2025-11-07"
   },
   {
     "id": 34,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Les meilleures pratiques pour concevoir des interfaces efficaces.",
-    "auteur": "Thomas Petit",
-    "date_creation": "2024-09-18T00:00:00",
-    "date_modification": "2024-10-26T00:00:00"
+    "titre": "Techniques professionnelles de SEO technique",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Emma Laurent",
+    "date_creation": "2022-12-12",
+    "date_modification": "2022-12-29"
   },
   {
     "id": 35,
-    "titre": "Bonnes pratiques de développement",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
+    "titre": "Vision moderne de API modernes",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
     "auteur": "Hugo Garcia",
-    "date_creation": "2022-11-20T00:00:00",
-    "date_modification": "2023-03-13T00:00:00"
+    "date_creation": "2023-08-18",
+    "date_modification": "2023-10-02"
   },
   {
     "id": 36,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Des conseils concrets pour optimiser votre workflow.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2022-05-14T00:00:00",
-    "date_modification": "2022-07-13T00:00:00"
+    "titre": "Étude pratique de design systems",
+    "excerpt": "Analyse détaillée des mécanismes et stratégies modernes.",
+    "auteur": "Camille Robert",
+    "date_creation": "2022-06-12",
+    "date_modification": "2022-09-30"
   },
   {
     "id": 37,
-    "titre": "Introduction aux architectures modernes",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2023-03-28T00:00:00",
-    "date_modification": "2023-06-30T00:00:00"
+    "titre": "Étude pratique de frameworks JavaScript",
+    "excerpt": "Approche systémique et scalable.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2025-07-01",
+    "date_modification": "2025-09-14"
   },
   {
     "id": 38,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
+    "titre": "Techniques professionnelles de cloud computing",
+    "excerpt": "Décryptage technique pour développeurs exigeants.",
     "auteur": "Emma Laurent",
-    "date_creation": "2023-11-28T00:00:00",
-    "date_modification": "2023-12-21T00:00:00"
+    "date_creation": "2023-07-29",
+    "date_modification": "2023-09-04"
   },
   {
     "id": 39,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Explorez les solutions modernes pour développer plus efficacement.",
-    "auteur": "Nathan Simon",
-    "date_creation": "2025-08-05T00:00:00",
-    "date_modification": "2025-11-03T00:00:00"
+    "titre": "Analyse approfondie de composants réutilisables",
+    "excerpt": "Optimisation concrète des processus numériques.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2025-02-12",
+    "date_modification": "2025-04-08"
   },
   {
     "id": 40,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Les meilleures pratiques pour concevoir des interfaces efficaces.",
-    "auteur": "Emma Laurent",
-    "date_creation": "2023-12-03T00:00:00",
-    "date_modification": "2024-01-19T00:00:00"
+    "titre": "Guide avancé de progressive web apps",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Lucas Martin",
+    "date_creation": "2023-07-21",
+    "date_modification": "2023-08-18"
   },
   {
     "id": 41,
-    "titre": "Introduction aux architectures modernes",
-    "excerpt": "Les meilleures pratiques pour concevoir des interfaces efficaces.",
-    "auteur": "Marie Dubois",
-    "date_creation": "2023-11-11T00:00:00",
-    "date_modification": "2023-11-16T00:00:00"
+    "titre": "Vision moderne de tests automatisés",
+    "excerpt": "Optimisation concrète des processus numériques.",
+    "auteur": "Chloé Michel",
+    "date_creation": "2024-12-29",
+    "date_modification": "2025-04-22"
   },
   {
     "id": 42,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
-    "auteur": "Emma Laurent",
-    "date_creation": "2022-08-17T00:00:00",
-    "date_modification": "2022-11-25T00:00:00"
+    "titre": "Guide avancé de accessibilité numérique",
+    "excerpt": "Décryptage technique pour développeurs exigeants.",
+    "auteur": "Camille Robert",
+    "date_creation": "2025-02-28",
+    "date_modification": "2025-04-26"
   },
   {
     "id": 43,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Des conseils concrets pour optimiser votre workflow.",
-    "auteur": "Julien Moreau",
-    "date_creation": "2023-11-28T00:00:00",
-    "date_modification": "2023-12-19T00:00:00"
+    "titre": "Étude pratique de intégration continue",
+    "excerpt": "Vision experte orientée résultats mesurables.",
+    "auteur": "Chloé Michel",
+    "date_creation": "2024-08-22",
+    "date_modification": "2024-09-22"
   },
   {
     "id": 44,
-    "titre": "Introduction aux architectures modernes",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
-    "auteur": "Marie Dubois",
-    "date_creation": "2023-05-14T00:00:00",
-    "date_modification": "2023-06-28T00:00:00"
+    "titre": "Bonnes pratiques essentielles de design systems",
+    "excerpt": "Perspective professionnelle basée sur des cas réels.",
+    "auteur": "Sophie Bernard",
+    "date_creation": "2024-06-23",
+    "date_modification": "2024-08-06"
   },
   {
     "id": 45,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Emma Laurent",
-    "date_creation": "2025-12-16T00:00:00",
-    "date_modification": "2026-04-15T00:00:00"
+    "titre": "Bonnes pratiques essentielles de design systems",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Lucas Martin",
+    "date_creation": "2025-10-27",
+    "date_modification": "2025-11-10"
   },
   {
     "id": 46,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
+    "titre": "Analyse approfondie de performance web",
+    "excerpt": "Optimisation concrète des processus numériques.",
     "auteur": "Sophie Bernard",
-    "date_creation": "2022-06-03T00:00:00",
-    "date_modification": "2022-09-17T00:00:00"
+    "date_creation": "2025-12-01",
+    "date_modification": "2025-12-31"
   },
   {
     "id": 47,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Hugo Garcia",
-    "date_creation": "2024-11-07T00:00:00",
-    "date_modification": "2024-11-11T00:00:00"
+    "titre": "Étude pratique de SEO technique",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Nathan Simon",
+    "date_creation": "2022-04-24",
+    "date_modification": "2022-08-09"
   },
   {
     "id": 48,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
+    "titre": "Mise en œuvre concrète de frameworks JavaScript",
+    "excerpt": "Vision experte orientée résultats mesurables.",
     "auteur": "Emma Laurent",
-    "date_creation": "2023-08-02T00:00:00",
-    "date_modification": "2023-08-23T00:00:00"
+    "date_creation": "2025-08-28",
+    "date_modification": "2025-12-04"
   },
   {
     "id": 49,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Apprenez à structurer vos projets de manière professionnelle.",
-    "auteur": "Nathan Simon",
-    "date_creation": "2023-11-04T00:00:00",
-    "date_modification": "2024-02-09T00:00:00"
+    "titre": "Guide avancé de intégration continue",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2022-05-30",
+    "date_modification": "2022-08-07"
   },
   {
     "id": 50,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
-    "auteur": "Chloé Michel",
-    "date_creation": "2023-11-30T00:00:00",
-    "date_modification": "2024-01-31T00:00:00"
+    "titre": "Approche stratégique de scalabilité",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Emma Laurent",
+    "date_creation": "2025-03-11",
+    "date_modification": "2025-06-04"
   },
   {
     "id": 51,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Apprenez à structurer vos projets de manière professionnelle.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2025-06-21T00:00:00",
-    "date_modification": "2025-06-23T00:00:00"
+    "titre": "Techniques professionnelles de scalabilité",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2024-12-12",
+    "date_modification": "2025-01-02"
   },
   {
     "id": 52,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
+    "titre": "Étude pratique de design systems",
+    "excerpt": "Exploration technique orientée performance et qualité.",
     "auteur": "Marie Dubois",
-    "date_creation": "2025-10-08T00:00:00",
-    "date_modification": "2026-01-09T00:00:00"
+    "date_creation": "2025-01-01",
+    "date_modification": "2025-01-11"
   },
   {
     "id": 53,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
-    "auteur": "Thomas Petit",
-    "date_creation": "2024-12-21T00:00:00",
-    "date_modification": "2025-04-16T00:00:00"
+    "titre": "Approche stratégique de UX design",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2023-02-22",
+    "date_modification": "2023-04-20"
   },
   {
     "id": 54,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
-    "auteur": "Emma Laurent",
-    "date_creation": "2022-01-08T00:00:00",
-    "date_modification": "2022-05-07T00:00:00"
+    "titre": "Principes fondamentaux de API modernes",
+    "excerpt": "Approche systémique et scalable.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2025-04-24",
+    "date_modification": "2025-05-14"
   },
   {
     "id": 55,
-    "titre": "Bonnes pratiques de développement",
-    "excerpt": "Apprenez à structurer vos projets de manière professionnelle.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2022-04-15T00:00:00",
-    "date_modification": "2022-05-13T00:00:00"
+    "titre": "Approche stratégique de backend haute performance",
+    "excerpt": "Décryptage technique pour développeurs exigeants.",
+    "auteur": "Chloé Michel",
+    "date_creation": "2025-08-03",
+    "date_modification": "2025-10-10"
   },
   {
     "id": 56,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Les meilleures pratiques pour concevoir des interfaces efficaces.",
+    "titre": "Principes fondamentaux de headless CMS",
+    "excerpt": "Approche systémique et scalable.",
     "auteur": "Emma Laurent",
-    "date_creation": "2025-01-23T00:00:00",
-    "date_modification": "2025-05-07T00:00:00"
+    "date_creation": "2022-02-28",
+    "date_modification": "2022-04-19"
   },
   {
     "id": 57,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
-    "auteur": "Emma Laurent",
-    "date_creation": "2023-01-11T00:00:00",
-    "date_modification": "2023-03-17T00:00:00"
+    "titre": "Bonnes pratiques essentielles de progressive web apps",
+    "excerpt": "Optimisation concrète des processus numériques.",
+    "auteur": "Camille Robert",
+    "date_creation": "2023-06-03",
+    "date_modification": "2023-09-04"
   },
   {
     "id": 58,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
-    "auteur": "Nathan Simon",
-    "date_creation": "2022-11-14T00:00:00",
-    "date_modification": "2023-02-12T00:00:00"
+    "titre": "Approche stratégique de UX design",
+    "excerpt": "Décryptage technique pour développeurs exigeants.",
+    "auteur": "Camille Robert",
+    "date_creation": "2022-08-04",
+    "date_modification": "2022-09-20"
   },
   {
     "id": 59,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Des conseils concrets pour optimiser votre workflow.",
-    "auteur": "Camille Robert",
-    "date_creation": "2023-11-29T00:00:00",
-    "date_modification": "2023-11-30T00:00:00"
+    "titre": "Étude pratique de backend haute performance",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2025-04-18",
+    "date_modification": "2025-05-08"
   },
   {
     "id": 60,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2022-09-30T00:00:00",
-    "date_modification": "2022-10-15T00:00:00"
+    "titre": "Vision moderne de optimisation frontend",
+    "excerpt": "Analyse détaillée des mécanismes et stratégies modernes.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2024-10-16",
+    "date_modification": "2025-01-14"
   },
   {
     "id": 61,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
-    "auteur": "Camille Robert",
-    "date_creation": "2023-01-23T00:00:00",
-    "date_modification": "2023-04-25T00:00:00"
+    "titre": "Méthodologie complète de SEO technique",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2023-05-19",
+    "date_modification": "2023-09-02"
   },
   {
     "id": 62,
-    "titre": "Comment améliorer les performances de votre site",
-    "excerpt": "Explorez les solutions modernes pour développer plus efficacement.",
+    "titre": "Méthodologie complète de scalabilité",
+    "excerpt": "Exploration technique orientée performance et qualité.",
     "auteur": "Marie Dubois",
-    "date_creation": "2025-03-11T00:00:00",
-    "date_modification": "2025-05-27T00:00:00"
+    "date_creation": "2025-04-08",
+    "date_modification": "2025-07-25"
   },
   {
     "id": 63,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
+    "titre": "Bonnes pratiques essentielles de intégration continue",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
     "auteur": "Lucas Martin",
-    "date_creation": "2025-07-08T00:00:00",
-    "date_modification": "2025-10-10T00:00:00"
+    "date_creation": "2023-09-03",
+    "date_modification": "2023-12-25"
   },
   {
     "id": 64,
-    "titre": "Optimiser l'expérience utilisateur",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
+    "titre": "Étude pratique de architecture logicielle",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
     "auteur": "Julien Moreau",
-    "date_creation": "2024-07-31T00:00:00",
-    "date_modification": "2024-08-27T00:00:00"
+    "date_creation": "2024-01-16",
+    "date_modification": "2024-01-26"
   },
   {
     "id": 65,
-    "titre": "Optimiser l'expérience utilisateur",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Emma Laurent",
-    "date_creation": "2022-10-28T00:00:00",
-    "date_modification": "2022-12-26T00:00:00"
+    "titre": "Approche stratégique de progressive web apps",
+    "excerpt": "Optimisation concrète des processus numériques.",
+    "auteur": "Lucas Martin",
+    "date_creation": "2025-11-14",
+    "date_modification": "2025-11-25"
   },
   {
     "id": 66,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
-    "auteur": "Camille Robert",
-    "date_creation": "2025-06-09T00:00:00",
-    "date_modification": "2025-07-31T00:00:00"
+    "titre": "Mise en œuvre concrète de backend haute performance",
+    "excerpt": "Décryptage technique pour développeurs exigeants.",
+    "auteur": "Lucas Martin",
+    "date_creation": "2022-09-24",
+    "date_modification": "2022-12-18"
   },
   {
     "id": 67,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2023-10-30T00:00:00",
-    "date_modification": "2024-02-11T00:00:00"
+    "titre": "Bonnes pratiques essentielles de cloud computing",
+    "excerpt": "Approche systémique et scalable.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2024-01-16",
+    "date_modification": "2024-05-05"
   },
   {
     "id": 68,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Les meilleures pratiques pour concevoir des interfaces efficaces.",
-    "auteur": "Hugo Garcia",
-    "date_creation": "2022-07-19T00:00:00",
-    "date_modification": "2022-09-14T00:00:00"
+    "titre": "Analyse approfondie de composants réutilisables",
+    "excerpt": "Vision experte orientée résultats mesurables.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2024-09-10",
+    "date_modification": "2025-01-04"
   },
   {
     "id": 69,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Découvrez les principes fondamentaux pour améliorer vos projets numériques.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2023-04-04T00:00:00",
-    "date_modification": "2023-05-19T00:00:00"
+    "titre": "Mise en œuvre concrète de optimisation frontend",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Nathan Simon",
+    "date_creation": "2024-03-11",
+    "date_modification": "2024-06-23"
   },
   {
     "id": 70,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Hugo Garcia",
-    "date_creation": "2023-05-14T00:00:00",
-    "date_modification": "2023-08-05T00:00:00"
+    "titre": "Étude pratique de performance web",
+    "excerpt": "Perspective professionnelle basée sur des cas réels.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2025-09-01",
+    "date_modification": "2025-09-12"
   },
   {
     "id": 71,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
-    "auteur": "Thomas Petit",
-    "date_creation": "2024-02-05T00:00:00",
-    "date_modification": "2024-03-08T00:00:00"
+    "titre": "Vision moderne de microservices",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Camille Robert",
+    "date_creation": "2025-05-09",
+    "date_modification": "2025-08-04"
   },
   {
     "id": 72,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Explorez les solutions modernes pour développer plus efficacement.",
-    "auteur": "Julien Moreau",
-    "date_creation": "2024-12-11T00:00:00",
-    "date_modification": "2024-12-23T00:00:00"
+    "titre": "Principes fondamentaux de tests automatisés",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2024-11-13",
+    "date_modification": "2025-01-10"
   },
   {
     "id": 73,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2024-12-28T00:00:00",
-    "date_modification": "2025-01-07T00:00:00"
+    "titre": "Méthodologie complète de sécurité applicative",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
+    "auteur": "Nathan Simon",
+    "date_creation": "2025-06-17",
+    "date_modification": "2025-07-15"
   },
   {
     "id": 74,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Apprenez à structurer vos projets de manière professionnelle.",
-    "auteur": "Thomas Petit",
-    "date_creation": "2022-04-27T00:00:00",
-    "date_modification": "2022-06-01T00:00:00"
+    "titre": "Méthodologie complète de architecture logicielle",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2022-05-08",
+    "date_modification": "2022-08-23"
   },
   {
     "id": 75,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Chloé Michel",
-    "date_creation": "2024-11-08T00:00:00",
-    "date_modification": "2024-12-22T00:00:00"
+    "titre": "Analyse approfondie de sécurité applicative",
+    "excerpt": "Décryptage technique pour développeurs exigeants.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2025-08-21",
+    "date_modification": "2025-12-19"
   },
   {
     "id": 76,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Nathan Simon",
-    "date_creation": "2024-02-25T00:00:00",
-    "date_modification": "2024-03-17T00:00:00"
+    "titre": "Bonnes pratiques essentielles de optimisation frontend",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Lucas Martin",
+    "date_creation": "2022-10-11",
+    "date_modification": "2022-10-17"
   },
   {
     "id": 77,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Julien Moreau",
-    "date_creation": "2025-11-08T00:00:00",
-    "date_modification": "2026-01-09T00:00:00"
+    "titre": "Étude pratique de optimisation frontend",
+    "excerpt": "Perspective professionnelle basée sur des cas réels.",
+    "auteur": "Chloé Michel",
+    "date_creation": "2024-12-26",
+    "date_modification": "2025-04-22"
   },
   {
     "id": 78,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
+    "titre": "Approche stratégique de progressive web apps",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
     "auteur": "Emma Laurent",
-    "date_creation": "2025-01-30T00:00:00",
-    "date_modification": "2025-05-24T00:00:00"
+    "date_creation": "2023-04-19",
+    "date_modification": "2023-08-17"
   },
   {
     "id": 79,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Explorez les solutions modernes pour développer plus efficacement.",
-    "auteur": "Marie Dubois",
-    "date_creation": "2025-01-19T00:00:00",
-    "date_modification": "2025-01-31T00:00:00"
+    "titre": "Techniques professionnelles de API modernes",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2025-06-01",
+    "date_modification": "2025-08-11"
   },
   {
     "id": 80,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
-    "auteur": "Camille Robert",
-    "date_creation": "2024-09-26T00:00:00",
-    "date_modification": "2024-11-22T00:00:00"
+    "titre": "Bonnes pratiques essentielles de headless CMS",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
+    "auteur": "Emma Laurent",
+    "date_creation": "2022-06-08",
+    "date_modification": "2022-07-26"
   },
   {
     "id": 81,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2024-06-26T00:00:00",
-    "date_modification": "2024-07-28T00:00:00"
+    "titre": "Mise en œuvre concrète de design systems",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2023-10-20",
+    "date_modification": "2024-01-10"
   },
   {
     "id": 82,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
-    "auteur": "Chloé Michel",
-    "date_creation": "2025-12-23T00:00:00",
-    "date_modification": "2026-02-26T00:00:00"
+    "titre": "Méthodologie complète de cloud computing",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
+    "auteur": "Emma Laurent",
+    "date_creation": "2025-07-23",
+    "date_modification": "2025-11-07"
   },
   {
     "id": 83,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2022-10-03T00:00:00",
-    "date_modification": "2022-12-17T00:00:00"
+    "titre": "Approche stratégique de scalabilité",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2025-12-07",
+    "date_modification": "2026-03-21"
   },
   {
     "id": 84,
-    "titre": "Optimiser l'expérience utilisateur",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
-    "auteur": "Camille Robert",
-    "date_creation": "2025-06-13T00:00:00",
-    "date_modification": "2025-07-12T00:00:00"
+    "titre": "Étude pratique de UX design",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2023-07-23",
+    "date_modification": "2023-08-03"
   },
   {
     "id": 85,
-    "titre": "Créer une stratégie de contenu efficace",
-    "excerpt": "Explorez les solutions modernes pour développer plus efficacement.",
-    "auteur": "Hugo Garcia",
-    "date_creation": "2023-12-10T00:00:00",
-    "date_modification": "2024-01-05T00:00:00"
+    "titre": "Mise en œuvre concrète de backend haute performance",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2025-05-01",
+    "date_modification": "2025-05-31"
   },
   {
     "id": 86,
-    "titre": "Les tendances du web moderne",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
-    "auteur": "Thomas Petit",
-    "date_creation": "2023-06-29T00:00:00",
-    "date_modification": "2023-06-30T00:00:00"
+    "titre": "Guide avancé de gestion des données",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2024-08-07",
+    "date_modification": "2024-09-21"
   },
   {
     "id": 87,
-    "titre": "Introduction aux architectures modernes",
-    "excerpt": "Les meilleures pratiques pour concevoir des interfaces efficaces.",
-    "auteur": "Chloé Michel",
-    "date_creation": "2022-09-26T00:00:00",
-    "date_modification": "2022-10-28T00:00:00"
+    "titre": "Vision moderne de intégration continue",
+    "excerpt": "Approche systémique et scalable.",
+    "auteur": "Emma Laurent",
+    "date_creation": "2022-12-03",
+    "date_modification": "2022-12-23"
   },
   {
     "id": 88,
-    "titre": "Bonnes pratiques de développement",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
-    "auteur": "Hugo Garcia",
-    "date_creation": "2025-01-17T00:00:00",
-    "date_modification": "2025-04-06T00:00:00"
+    "titre": "Méthodologie complète de architecture logicielle",
+    "excerpt": "Perspective professionnelle basée sur des cas réels.",
+    "auteur": "Thomas Petit",
+    "date_creation": "2022-10-02",
+    "date_modification": "2023-01-28"
   },
   {
     "id": 89,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2023-02-13T00:00:00",
-    "date_modification": "2023-04-15T00:00:00"
+    "titre": "Guide avancé de gestion des données",
+    "excerpt": "Optimisation concrète des processus numériques.",
+    "auteur": "Hugo Garcia",
+    "date_creation": "2022-12-09",
+    "date_modification": "2022-12-09"
   },
   {
     "id": 90,
-    "titre": "Bonnes pratiques de développement",
-    "excerpt": "Explorez les solutions modernes pour développer plus efficacement.",
-    "auteur": "Nathan Simon",
-    "date_creation": "2025-08-11T00:00:00",
-    "date_modification": "2025-08-12T00:00:00"
+    "titre": "Techniques professionnelles de gestion des données",
+    "excerpt": "Décryptage technique pour développeurs exigeants.",
+    "auteur": "Sophie Bernard",
+    "date_creation": "2023-12-14",
+    "date_modification": "2024-02-24"
   },
   {
     "id": 91,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Les meilleures pratiques pour concevoir des interfaces efficaces.",
-    "auteur": "Nathan Simon",
-    "date_creation": "2023-06-02T00:00:00",
-    "date_modification": "2023-09-12T00:00:00"
+    "titre": "Bonnes pratiques essentielles de cloud computing",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
+    "auteur": "Sophie Bernard",
+    "date_creation": "2024-09-19",
+    "date_modification": "2024-12-18"
   },
   {
     "id": 92,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Comprendre les bases pour aller plus loin dans vos projets.",
+    "titre": "Bonnes pratiques essentielles de optimisation frontend",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
     "auteur": "Hugo Garcia",
-    "date_creation": "2022-06-03T00:00:00",
-    "date_modification": "2022-08-05T00:00:00"
+    "date_creation": "2024-10-19",
+    "date_modification": "2025-01-01"
   },
   {
     "id": 93,
-    "titre": "Guide complet du responsive design",
-    "excerpt": "Un guide pratique pour améliorer vos compétences techniques.",
-    "auteur": "Hugo Garcia",
-    "date_creation": "2025-09-02T00:00:00",
-    "date_modification": "2025-12-23T00:00:00"
+    "titre": "Vision moderne de composants réutilisables",
+    "excerpt": "Exploration technique orientée performance et qualité.",
+    "auteur": "Chloé Michel",
+    "date_creation": "2024-11-01",
+    "date_modification": "2024-12-29"
   },
   {
     "id": 94,
-    "titre": "Comprendre les API REST",
-    "excerpt": "Les meilleures pratiques pour concevoir des interfaces efficaces.",
-    "auteur": "Hugo Garcia",
-    "date_creation": "2023-06-12T00:00:00",
-    "date_modification": "2023-09-29T00:00:00"
+    "titre": "Mise en œuvre concrète de gestion des données",
+    "excerpt": "Méthodologie structurée pour projets complexes.",
+    "auteur": "Nathan Simon",
+    "date_creation": "2023-07-29",
+    "date_modification": "2023-11-25"
   },
   {
     "id": 95,
-    "titre": "Introduction aux architectures modernes",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Julien Moreau",
-    "date_creation": "2023-06-08T00:00:00",
-    "date_modification": "2023-07-22T00:00:00"
+    "titre": "Étude pratique de microservices",
+    "excerpt": "Optimisation concrète des processus numériques.",
+    "auteur": "Emma Laurent",
+    "date_creation": "2022-12-15",
+    "date_modification": "2023-01-16"
   },
   {
     "id": 96,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Des conseils concrets pour optimiser votre workflow.",
-    "auteur": "Thomas Petit",
-    "date_creation": "2024-08-11T00:00:00",
-    "date_modification": "2024-08-14T00:00:00"
+    "titre": "Bonnes pratiques essentielles de backend haute performance",
+    "excerpt": "Approche systémique et scalable.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2025-12-17",
+    "date_modification": "2026-02-16"
   },
   {
     "id": 97,
-    "titre": "Introduction aux architectures modernes",
-    "excerpt": "Des conseils concrets pour optimiser votre workflow.",
-    "auteur": "Thomas Petit",
-    "date_creation": "2023-10-04T00:00:00",
-    "date_modification": "2023-11-20T00:00:00"
+    "titre": "Techniques professionnelles de sécurité applicative",
+    "excerpt": "Perspective professionnelle basée sur des cas réels.",
+    "auteur": "Marie Dubois",
+    "date_creation": "2023-12-28",
+    "date_modification": "2024-01-14"
   },
   {
     "id": 98,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Les éléments essentiels à maîtriser aujourd'hui.",
-    "auteur": "Lucas Martin",
-    "date_creation": "2023-11-18T00:00:00",
-    "date_modification": "2024-02-03T00:00:00"
+    "titre": "Principes fondamentaux de performance web",
+    "excerpt": "Synthèse des meilleures méthodes actuelles.",
+    "auteur": "Nathan Simon",
+    "date_creation": "2025-03-05",
+    "date_modification": "2025-05-06"
   },
   {
     "id": 99,
-    "titre": "Les outils indispensables pour les développeurs",
-    "excerpt": "Une introduction claire pour mieux comprendre les enjeux actuels.",
-    "auteur": "Sophie Bernard",
-    "date_creation": "2024-09-18T00:00:00",
-    "date_modification": "2024-09-21T00:00:00"
+    "titre": "Vision moderne de frameworks JavaScript",
+    "excerpt": "Perspective professionnelle basée sur des cas réels.",
+    "auteur": "Julien Moreau",
+    "date_creation": "2024-09-01",
+    "date_modification": "2024-12-24"
   },
   {
     "id": 100,
-    "titre": "Sécurité web : les bases essentielles",
-    "excerpt": "Un aperçu des techniques modernes pour optimiser vos performances.",
-    "auteur": "Camille Robert",
-    "date_creation": "2024-03-04T00:00:00",
-    "date_modification": "2024-04-11T00:00:00"
+    "titre": "Approche stratégique de cloud computing",
+    "excerpt": "Approche pratique pour améliorer vos implémentations.",
+    "auteur": "Sophie Bernard",
+    "date_creation": "2025-02-13",
+    "date_modification": "2025-04-30"
   }
 ]
